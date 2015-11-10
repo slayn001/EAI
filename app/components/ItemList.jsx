@@ -42,7 +42,6 @@ module.exports = React.createClass({
     this.props.items.forEach(function(item, color){
       if ( item.selected){
         var obj = {};
-        action.setEmailed(item);
         obj.email = item.managerEmail;
         obj.date = item.tgtConvDate;
         lst.push(obj);

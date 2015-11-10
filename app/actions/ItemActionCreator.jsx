@@ -25,10 +25,16 @@ module.exports = {
       , type:'item:purchase'
     });
   }
-  ,setEmailed: function(item){
+  ,setEnvSignOff: function(item){
     dispatcher.dispatch({
       payload: item
-      , type:'item:setEmailed'
+      ,type:'item:setEnvSignOff'
+    })
+  }
+  ,setGuideSignOff: function(item){
+    dispatcher.dispatch({
+      payload: item
+      ,type:'item:setGuideSignOff'
     })
   }
   ,email: function(data){
