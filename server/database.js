@@ -27,7 +27,7 @@ mongoose.connect('mongodb://localhost/eai', function(){
 {"tgtConvDate":"11/24/2015","train":3,"environment":"DEV","appWing":"Wing 5","webWing":"Wing 5","cell":"webservices6DEV","wasVersion":"6.1.0.29","type":"Web","server":"AXSCGPAR0076","appServerName ":"AXSCGPAR0076","appName":"CDFWS - Case Definition Facility Web Services ","shortAppName":"  CDFPlan","eai":1045,"projectManager":"Yerkola,Sunil","managerEmail":"syerkola@mailinator.net","masterAppName":"Case Definition Facility (CDF)","envSignOff":true,"guideSignOff":false}];
 
   items.forEach(function(item){
-    console.log(  new Item(item));
+    //console.log(  new Item(item));
     new Item(item).save();
   })
 });
