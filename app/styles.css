@@ -1,0 +1,42 @@
+.strikethrough {
+  text-decoration: line-through;
+  color: slategrey;
+}
+html {
+  color: darkslategray;
+  background-color: #fffefd;
+}
+body{
+  padding-top: 3rem;
+}
+
+.columns{
+  text-align: right;
+}
+
+h1 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+.heading {
+  padding-top:75px;
+}
+.emailChecked {
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+a {
+  color:black !important;
+}
+.blue {
+  background-color: #5ee6ed
+}
+.amber {
+  background-color: #FFCC00
+}
+.green {
+  background-color: #66FF33
+}
+.red {
+  background-color: #ff2929
+}
