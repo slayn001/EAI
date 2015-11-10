@@ -20,6 +20,7 @@ getInitialState: function(){
   }, function(){
     console.log(this.state.envButton);
   })
+  action.setEnvSignOff(this.props.item);
 }
 ,setGuideSignOff: function(e){
   console.log('you clicked me');
@@ -29,6 +30,7 @@ getInitialState: function(){
   }, function(){
     console.log(this.state.guideButton);
   })
+  action.setGuideSignOff(this.props.item);
 }
 ,selectItem: function(e){
   e.preventDefault();

@@ -42,24 +42,19 @@ function ItemStore(){
     helper.del('/api/items/' + item._id);
   }
 
-  function setItemBought(item, isBought){
-
-    item.purchased = isBought || false;
-
+  function setEnvSignOff(item, envSignOff){
+    item.envSignOff = envSignOff || false;
     triggerListeners();
-
-    helper.patch('/api/items/' + item._id, item).then(triggerListeners);
+    helper.patch('/api/items/' + item._id, item);
   }
 
-  function setEmailed(item, emailed){
-    item.emailed = emailed || false;
+  function setGuideSignOff(item, guideSignOff){
+    item.guideSignOff = guideSignOff || false;
     triggerListeners();
     helper.patch('/api/items/' + item._id, item);
   }
 
   function email(lst){
-    console.log('ItemStore');
-    console.log(lst);
     triggerListeners();
     helper.post('/api/email', lst);
   }
@@ -79,8 +74,11 @@ function ItemStore(){
 
     if (split[0] === 'item'){
       switch(split[1]){
-        case 'setEmailed' :
-          setEmailed(event.payload, true);
+        case 'setEnvSignOff' :
+          setEnvSignOff(event.payload, true);
+          break;
+        case 'setGuideSignOff' :
+          setGuideSignOff(event.payload, true);
           break;
         case 'email' :
           email(event.payload);

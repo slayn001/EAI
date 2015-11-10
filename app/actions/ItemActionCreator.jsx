@@ -26,12 +26,14 @@ module.exports = {
     });
   }
   ,setEnvSignOff: function(item){
+    console.log(item);
     dispatcher.dispatch({
       payload: item
       ,type:'item:setEnvSignOff'
     })
   }
   ,setGuideSignOff: function(item){
+    console.log(item);
     dispatcher.dispatch({
       payload: item
       ,type:'item:setGuideSignOff'
