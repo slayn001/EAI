@@ -28,6 +28,9 @@ h1 {
 a {
   color:black !important;
 }
+a img{
+  margin-top: -10px;
+}
 .blue {
   background-color: #5ee6ed
 }

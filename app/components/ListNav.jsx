@@ -10,10 +10,9 @@ module.exports = React.createClass({
           </div>
           <div>
             <ul className="nav navbar-nav">
-              <li className="active"><a href="#">Home</a></li>
-              <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li>
+              <li className='red'><a>Delinquent</a></li>
+              <li className='amber'><a>Coming Due</a></li>
+              <li className='green'><a>Future Items</a></li>
             </ul>
           </div>
         </div>

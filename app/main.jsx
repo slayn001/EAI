@@ -15,5 +15,4 @@ ItemStore.onChange(function(items){
   render();
 })
 
-navRender();
 render();
