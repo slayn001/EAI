@@ -28,7 +28,7 @@ module.exports = React.createClass({
 
     var dayDiff = this.getDayDiff(new Date(), this.convertFromStringToDate(item.tgtConvDate));
 
-    if (  dayDiff  <= 0 )
+    if (  dayDiff  < 0 )
       return 'red';
     else if (  dayDiff <= 14 )
       return 'amber';

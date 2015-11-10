@@ -15,10 +15,10 @@ function returnColor(date){
 
   var dayDiff = getDayDiff(new Date(), convertFromStringToDate(date));
 
-  if (  dayDiff  <= 0 )
+  if (  dayDiff  < 0 )
     return 'red';
   else if (  dayDiff <= 14 )
-    return 'amber'
+    return 'amber';
 }
 
 module.exports = {
