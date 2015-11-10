@@ -5,7 +5,6 @@ var ItemSchema = {
   train: Number
   ,eai: String
   ,appName: String
-  ,masterAppName: String
   ,projectManager: String
   ,managerEmail:String
   ,server: String
@@ -15,7 +14,8 @@ var ItemSchema = {
   ,envSignOff: Boolean
   ,id: String
   ,tgtConvDate: String
-  ,emailed:Boolean
+  ,envSignOffDate: String
+  ,guideSignOffDate: String
 };
 
 var Item = mongoose.model('Item',ItemSchema, "Items");

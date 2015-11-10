@@ -44,12 +44,14 @@ function ItemStore(){
 
   function setEnvSignOff(item, envSignOff){
     item.envSignOff = envSignOff || false;
+    item.envSignOffDate = new Date();
     triggerListeners();
     helper.patch('/api/items/' + item._id, item);
   }
 
   function setGuideSignOff(item, guideSignOff){
     item.guideSignOff = guideSignOff || false;
+    item.guideSignOffDate = new Date();
     triggerListeners();
     helper.patch('/api/items/' + item._id, item);
   }

@@ -13,45 +13,41 @@ getInitialState: function(){
   }
 }
 ,setEnvSignOff: function(e){
-  console.log('you clicked me');
-  var newState = !this.state.envButton;
   this.setState({
-    envButton: newState
+    envButton: !this.state.envButton
   }, function(){
     console.log(this.state.envButton);
   })
+
   action.setEnvSignOff(this.props.item);
 }
 ,setGuideSignOff: function(e){
-  console.log('you clicked me');
-  var newState = !this.state.guideButton;
   this.setState({
-    guideButton: newState
+    guideButton: !this.state.guideButton
   }, function(){
     console.log(this.state.guideButton);
   })
+
   action.setGuideSignOff(this.props.item);
 }
 ,selectItem: function(e){
   e.preventDefault();
-  var newState = !this.state.selected;
-  var color = newState?'blue':this.props.color;
+  var selectedState = !this.state.selected;
+  var color = selectedState ? 'blue' : this.props.color;
   this.setState({
-    selected: newState
+    selected: selectedState
     ,color: color
   }, function(){
     console.log(this.state.selected);
   });
-  this.props.callbackParent(newState, this.props.itemIndex);
+
+  this.props.callbackParent(selectedState, this.props.itemIndex);
 }
 ,render: function(){
 
     var trainClasses = classNames('one', 'columns', this.state.color);
-    var envButtonClasses = classNames('btn', this.state.envbutton);
-    var guideButtonClasses = classNames('btn', this.state.guidebutton);
 
     return (
-
       <div className='item row'>
         <a href='#' onClick={this.selectItem}>
         <div className={trainClasses}>
