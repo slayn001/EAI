@@ -8,8 +8,8 @@ getInitialState: function(){
   return {
     selected: this.props.selected || false
     ,color: this.props.color
-    ,envButton: this.props.envSignOff || false
-    ,guideButton: this.props.guideSignOff || false
+    ,envButton: this.props.eso || false
+    ,guideButton: this.props.gso || false
   }
 }
 ,setEnvSignOff: function(e){

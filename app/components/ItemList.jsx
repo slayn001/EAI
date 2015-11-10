@@ -62,7 +62,7 @@ module.exports = React.createClass({
           {this.props.items.map(function(item, i){
 
             return(
-            <Item  color={this.returnColor(item)} callbackParent={this.onChildChanged} item={item} key={item._id} itemIndex={i}/>
+            <Item  eso={item.envSignOff} gso={item.guideSignOff} color={this.returnColor(item)} callbackParent={this.onChildChanged} item={item} key={item._id} itemIndex={i}/>
             )
           }, this).sort(function(a, b){
             return a.props.item.train-b.props.item.train;
