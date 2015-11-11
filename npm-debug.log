@@ -1,0 +1,1365 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'history' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose install initial load of C:\React\EAI\package.json
+5 warn package.json fullstackapp@1.0.0 No description
+6 warn package.json fullstackapp@1.0.0 No repository field.
+7 warn package.json fullstackapp@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\babel\package.json
+9 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\body-parser\package.json
+10 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\bootstrap\package.json
+11 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\browser-sync\package.json
+12 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\browserify\package.json
+13 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\classnames\package.json
+14 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\ejs\package.json
+15 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\express\package.json
+16 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\guid\package.json
+17 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\gulp\package.json
+18 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\gulp-live-server\package.json
+19 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\jquery\package.json
+20 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\moment\package.json
+21 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\mongoose\package.json
+22 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\nodemailer\package.json
+23 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\nodemailer-smtp-transport\package.json
+24 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\page\package.json
+25 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\react\package.json
+26 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\react-bootstrap\package.json
+27 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\react-dom\package.json
+28 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\reactify\package.json
+29 verbose installManyTop reading scoped package data from C:\React\EAI\node_modules\vinyl-source-stream\package.json
+30 info package.json guid@0.0.12 No license field.
+31 info package.json jquery@2.1.4 No license field.
+32 verbose readDependencies loading dependencies from C:\React\EAI\package.json
+33 silly cache add args [ 'history', null ]
+34 verbose cache add spec history
+35 silly cache add parsed spec { raw: 'history',
+35 silly cache add   scope: null,
+35 silly cache add   name: 'history',
+35 silly cache add   rawSpec: '',
+35 silly cache add   spec: '*',
+35 silly cache add   type: 'range' }
+36 silly addNamed history@*
+37 verbose addNamed "*" is a valid semver range for history
+38 silly addNameRange { name: 'history', range: '*', hasData: false }
+39 silly mapToRegistry name history
+40 silly mapToRegistry using default registry
+41 silly mapToRegistry registry https://registry.npmjs.org/
+42 silly mapToRegistry uri https://registry.npmjs.org/history
+43 verbose addNameRange registry:https://registry.npmjs.org/history not in flight; fetching
+44 verbose request uri https://registry.npmjs.org/history
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 9:24:32 AM
+47 verbose request id 60566dc9869be1e3
+48 verbose etag "8URIMBHDJHK7PFA5RFBN8KXDD"
+49 http request GET https://registry.npmjs.org/history
+50 http 304 https://registry.npmjs.org/history
+51 silly get cb [ 304,
+51 silly get   { date: 'Wed, 11 Nov 2015 14:24:32 GMT',
+51 silly get     via: '1.1 varnish',
+51 silly get     'cache-control': 'max-age=60',
+51 silly get     etag: '"8URIMBHDJHK7PFA5RFBN8KXDD"',
+51 silly get     age: '18',
+51 silly get     connection: 'keep-alive',
+51 silly get     'x-served-by': 'cache-atl6226-ATL',
+51 silly get     'x-cache': 'HIT',
+51 silly get     'x-cache-hits': '1',
+51 silly get     'x-timer': 'S1447251872.679924,VS0,VE0',
+51 silly get     vary: 'Accept' } ]
+52 verbose etag https://registry.npmjs.org/history from cache
+53 verbose get saving history to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\history\.cache.json
+54 silly addNameRange number 2 { name: 'history', range: '*', hasData: true }
+55 silly addNameRange versions [ 'history',
+55 silly addNameRange   [ '0.1.0',
+55 silly addNameRange     '1.0.0',
+55 silly addNameRange     '1.1.0',
+55 silly addNameRange     '1.2.0',
+55 silly addNameRange     '1.2.1',
+55 silly addNameRange     '1.2.2',
+55 silly addNameRange     '1.3.0',
+55 silly addNameRange     '1.3.1',
+55 silly addNameRange     '1.3.2',
+55 silly addNameRange     '1.3.3',
+55 silly addNameRange     '1.4.0',
+55 silly addNameRange     '1.4.1',
+55 silly addNameRange     '1.5.0',
+55 silly addNameRange     '1.6.0',
+55 silly addNameRange     '1.7.0',
+55 silly addNameRange     '1.8.0',
+55 silly addNameRange     '1.8.1',
+55 silly addNameRange     '1.8.2',
+55 silly addNameRange     '1.8.3',
+55 silly addNameRange     '1.8.4',
+55 silly addNameRange     '1.8.5',
+55 silly addNameRange     '1.9.0',
+55 silly addNameRange     '1.9.1',
+55 silly addNameRange     '1.10.0',
+55 silly addNameRange     '1.10.1',
+55 silly addNameRange     '1.10.2',
+55 silly addNameRange     '1.11.0',
+55 silly addNameRange     '1.11.1',
+55 silly addNameRange     '1.12.0',
+55 silly addNameRange     '1.12.1',
+55 silly addNameRange     '1.12.2',
+55 silly addNameRange     '1.12.3',
+55 silly addNameRange     '1.12.4',
+55 silly addNameRange     '1.12.5',
+55 silly addNameRange     '1.12.6',
+55 silly addNameRange     '1.13.0' ] ]
+56 silly addNamed history@1.13.0
+57 verbose addNamed "1.13.0" is a plain semver version for history
+58 silly cache afterAdd history@1.13.0
+59 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\history\1.13.0\package\package.json not in flight; writing
+60 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\history\1.13.0\package\package.json written
+61 silly install resolved [ { name: 'history',
+61 silly install resolved     version: '1.13.0',
+61 silly install resolved     description: 'A minimal, functional history implementation for JavaScript',
+61 silly install resolved     main: 'lib/index',
+61 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/rackt/history.git' },
+61 silly install resolved     bugs: { url: 'https://github.com/rackt/history/issues' },
+61 silly install resolved     scripts:
+61 silly install resolved      { build: 'babel ./modules --stage 0 --loose all -d lib --ignore \'__tests__\'',
+61 silly install resolved        'build-umd': 'NODE_ENV=production webpack modules/index.js umd/History.js',
+61 silly install resolved        'build-min': 'NODE_ENV=production webpack -p modules/index.js umd/History.min.js',
+61 silly install resolved        lint: 'eslint modules',
+61 silly install resolved        start: 'webpack-dev-server -d --content-base ./ --history-api-fallback --inline modules/index.js',
+61 silly install resolved        test: 'npm run lint && karma start',
+61 silly install resolved        postinstall: 'node ./npm-scripts/postinstall.js' },
+61 silly install resolved     authors: [ 'Michael Jackson' ],
+61 silly install resolved     license: 'MIT',
+61 silly install resolved     dependencies:
+61 silly install resolved      { 'deep-equal': '^1.0.0',
+61 silly install resolved        invariant: '^2.0.0',
+61 silly install resolved        qs: '^4.0.0',
+61 silly install resolved        warning: '^2.0.0' },
+61 silly install resolved     devDependencies:
+61 silly install resolved      { assert: '1.3.0',
+61 silly install resolved        babel: '^5.4.7',
+61 silly install resolved        'babel-core': '^5.4.7',
+61 silly install resolved        'babel-eslint': '^3.1.23',
+61 silly install resolved        'babel-loader': '^5.0.0',
+61 silly install resolved        eslint: '1.4.1',
+61 silly install resolved        'eslint-config-rackt': '1.0.0',
+61 silly install resolved        'eslint-plugin-react': '3.3.2',
+61 silly install resolved        expect: '^1.12.0',
+61 silly install resolved        'gzip-size': '^3.0.0',
+61 silly install resolved        karma: '^0.13.3',
+61 silly install resolved        'karma-browserstack-launcher': '^0.1.3',
+61 silly install resolved        'karma-chrome-launcher': '^0.2.0',
+61 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+61 silly install resolved        'karma-mocha': '^0.2.0',
+61 silly install resolved        'karma-mocha-reporter': '^1.0.4',
+61 silly install resolved        'karma-sourcemap-loader': '^0.3.5',
+61 silly install resolved        'karma-webpack': '^1.7.0',
+61 silly install resolved        mocha: '^2.0.1',
+61 silly install resolved        'pretty-bytes': '^2.0.1',
+61 silly install resolved        rimraf: '^2.4.2',
+61 silly install resolved        webpack: '^1.4.13',
+61 silly install resolved        'webpack-dev-server': '^1.10.1' },
+61 silly install resolved     tags: [ 'history', 'location' ],
+61 silly install resolved     keywords: [ 'history', 'location' ],
+61 silly install resolved     gitHead: 'c1e1ea8435411bd4697a7b39b4dd86ab306ad075',
+61 silly install resolved     homepage: 'https://github.com/rackt/history#readme',
+61 silly install resolved     _id: 'history@1.13.0',
+61 silly install resolved     _shasum: 'ff75e23680d9f7962c5eb1e159a36d22ae87f4aa',
+61 silly install resolved     _from: 'history@*',
+61 silly install resolved     _npmVersion: '3.3.1',
+61 silly install resolved     _nodeVersion: '0.12.7',
+61 silly install resolved     _npmUser: { name: 'mjackson', email: 'mjijackson@gmail.com' },
+61 silly install resolved     dist:
+61 silly install resolved      { shasum: 'ff75e23680d9f7962c5eb1e159a36d22ae87f4aa',
+61 silly install resolved        tarball: 'http://registry.npmjs.org/history/-/history-1.13.0.tgz' },
+61 silly install resolved     maintainers: [ [Object], [Object] ],
+61 silly install resolved     directories: {},
+61 silly install resolved     _resolved: 'https://registry.npmjs.org/history/-/history-1.13.0.tgz',
+61 silly install resolved     readme: 'ERROR: No README data found!' } ]
+62 info install history@1.13.0 into C:\React\EAI
+63 info installOne history@1.13.0
+64 verbose installOne of history to C:\React\EAI not in flight; installing
+65 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\history-73c2ce97e66eb56c.lock for C:\React\EAI\node_modules\history
+66 silly install write writing history 1.13.0 to C:\React\EAI\node_modules\history
+67 verbose unbuild node_modules\history
+68 silly gentlyRm C:\React\EAI\node_modules\history is being purged from base C:\React\EAI
+69 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history
+70 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\history\1.13.0\package.tgz
+71 verbose tar unpacking to C:\React\EAI\node_modules\history
+72 silly gentlyRm C:\React\EAI\node_modules\history is being purged
+73 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history
+74 silly gunzTarPerm modes [ '777', '666' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+77 silly gunzTarPerm extractEntry .npmignore
+78 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+79 silly gunzTarPerm extractEntry README.md
+80 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+81 silly gunzTarPerm extractEntry LICENSE.md
+82 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+83 silly gunzTarPerm extractEntry umd/History.js
+84 silly gunzTarPerm modified mode [ 'umd/History.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry umd/History.min.js
+86 silly gunzTarPerm modified mode [ 'umd/History.min.js', 420, 438 ]
+87 silly gunzTarPerm extractEntry docs/README.md
+88 silly gunzTarPerm modified mode [ 'docs/README.md', 420, 438 ]
+89 silly gunzTarPerm extractEntry docs/BasenameSupport.md
+90 silly gunzTarPerm modified mode [ 'docs/BasenameSupport.md', 420, 438 ]
+91 silly gunzTarPerm extractEntry docs/ConfirmingNavigation.md
+92 silly gunzTarPerm modified mode [ 'docs/ConfirmingNavigation.md', 420, 438 ]
+93 silly gunzTarPerm extractEntry docs/GettingStarted.md
+94 silly gunzTarPerm modified mode [ 'docs/GettingStarted.md', 420, 438 ]
+95 silly gunzTarPerm extractEntry docs/Glossary.md
+96 silly gunzTarPerm modified mode [ 'docs/Glossary.md', 420, 438 ]
+97 silly gunzTarPerm extractEntry docs/HashHistoryCaveats.md
+98 silly gunzTarPerm modified mode [ 'docs/HashHistoryCaveats.md', 420, 438 ]
+99 silly gunzTarPerm extractEntry docs/Location.md
+100 silly gunzTarPerm modified mode [ 'docs/Location.md', 420, 438 ]
+101 silly gunzTarPerm extractEntry docs/QuerySupport.md
+102 silly gunzTarPerm modified mode [ 'docs/QuerySupport.md', 420, 438 ]
+103 silly gunzTarPerm extractEntry CHANGES.md
+104 silly gunzTarPerm modified mode [ 'CHANGES.md', 420, 438 ]
+105 silly gunzTarPerm extractEntry modules/Actions.js
+106 silly gunzTarPerm modified mode [ 'modules/Actions.js', 420, 438 ]
+107 silly gunzTarPerm extractEntry modules/createDOMHistory.js
+108 silly gunzTarPerm modified mode [ 'modules/createDOMHistory.js', 420, 438 ]
+109 silly gunzTarPerm extractEntry modules/createHashHistory.js
+110 silly gunzTarPerm modified mode [ 'modules/createHashHistory.js', 420, 438 ]
+111 silly gunzTarPerm extractEntry modules/createHistory.js
+112 silly gunzTarPerm modified mode [ 'modules/createHistory.js', 420, 438 ]
+113 silly gunzTarPerm extractEntry modules/createLocation.js
+114 silly gunzTarPerm modified mode [ 'modules/createLocation.js', 420, 438 ]
+115 silly gunzTarPerm extractEntry modules/createBrowserHistory.js
+116 silly gunzTarPerm modified mode [ 'modules/createBrowserHistory.js', 420, 438 ]
+117 silly gunzTarPerm extractEntry modules/deprecate.js
+118 silly gunzTarPerm modified mode [ 'modules/deprecate.js', 420, 438 ]
+119 silly gunzTarPerm extractEntry modules/enableBeforeUnload.js
+120 silly gunzTarPerm modified mode [ 'modules/enableBeforeUnload.js', 420, 438 ]
+121 silly gunzTarPerm extractEntry modules/enableQueries.js
+122 silly gunzTarPerm modified mode [ 'modules/enableQueries.js', 420, 438 ]
+123 silly gunzTarPerm extractEntry modules/index.js
+124 silly gunzTarPerm modified mode [ 'modules/index.js', 420, 438 ]
+125 silly gunzTarPerm extractEntry modules/parsePath.js
+126 silly gunzTarPerm modified mode [ 'modules/parsePath.js', 420, 438 ]
+127 silly gunzTarPerm extractEntry modules/ExecutionEnvironment.js
+128 silly gunzTarPerm modified mode [ 'modules/ExecutionEnvironment.js', 420, 438 ]
+129 silly gunzTarPerm extractEntry modules/runTransitionHook.js
+130 silly gunzTarPerm modified mode [ 'modules/runTransitionHook.js', 420, 438 ]
+131 silly gunzTarPerm extractEntry modules/DOMUtils.js
+132 silly gunzTarPerm modified mode [ 'modules/DOMUtils.js', 420, 438 ]
+133 silly gunzTarPerm extractEntry modules/useBasename.js
+134 silly gunzTarPerm modified mode [ 'modules/useBasename.js', 420, 438 ]
+135 silly gunzTarPerm extractEntry modules/DOMStateStorage.js
+136 silly gunzTarPerm modified mode [ 'modules/DOMStateStorage.js', 420, 438 ]
+137 silly gunzTarPerm extractEntry modules/useBeforeUnload.js
+138 silly gunzTarPerm modified mode [ 'modules/useBeforeUnload.js', 420, 438 ]
+139 silly gunzTarPerm extractEntry modules/AsyncUtils.js
+140 silly gunzTarPerm modified mode [ 'modules/AsyncUtils.js', 420, 438 ]
+141 silly gunzTarPerm extractEntry modules/useQueries.js
+142 silly gunzTarPerm modified mode [ 'modules/useQueries.js', 420, 438 ]
+143 silly gunzTarPerm extractEntry modules/createMemoryHistory.js
+144 silly gunzTarPerm modified mode [ 'modules/createMemoryHistory.js', 420, 438 ]
+145 silly gunzTarPerm extractEntry CONTRIBUTING.md
+146 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+147 silly gunzTarPerm extractEntry npm-scripts/postinstall.js
+148 silly gunzTarPerm modified mode [ 'npm-scripts/postinstall.js', 420, 438 ]
+149 silly gunzTarPerm extractEntry lib/Actions.js
+150 silly gunzTarPerm modified mode [ 'lib/Actions.js', 420, 438 ]
+151 silly gunzTarPerm extractEntry lib/createDOMHistory.js
+152 silly gunzTarPerm modified mode [ 'lib/createDOMHistory.js', 420, 438 ]
+153 silly gunzTarPerm extractEntry lib/createHashHistory.js
+154 silly gunzTarPerm modified mode [ 'lib/createHashHistory.js', 420, 438 ]
+155 silly gunzTarPerm extractEntry lib/createHistory.js
+156 silly gunzTarPerm modified mode [ 'lib/createHistory.js', 420, 438 ]
+157 silly gunzTarPerm extractEntry lib/createLocation.js
+158 silly gunzTarPerm modified mode [ 'lib/createLocation.js', 420, 438 ]
+159 silly gunzTarPerm extractEntry lib/createBrowserHistory.js
+160 silly gunzTarPerm modified mode [ 'lib/createBrowserHistory.js', 420, 438 ]
+161 silly gunzTarPerm extractEntry lib/deprecate.js
+162 silly gunzTarPerm modified mode [ 'lib/deprecate.js', 420, 438 ]
+163 silly gunzTarPerm extractEntry lib/enableBeforeUnload.js
+164 silly gunzTarPerm modified mode [ 'lib/enableBeforeUnload.js', 420, 438 ]
+165 silly gunzTarPerm extractEntry lib/enableQueries.js
+166 silly gunzTarPerm modified mode [ 'lib/enableQueries.js', 420, 438 ]
+167 silly gunzTarPerm extractEntry lib/index.js
+168 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+169 silly gunzTarPerm extractEntry lib/parsePath.js
+170 silly gunzTarPerm modified mode [ 'lib/parsePath.js', 420, 438 ]
+171 silly gunzTarPerm extractEntry lib/ExecutionEnvironment.js
+172 silly gunzTarPerm modified mode [ 'lib/ExecutionEnvironment.js', 420, 438 ]
+173 silly gunzTarPerm extractEntry lib/runTransitionHook.js
+174 silly gunzTarPerm modified mode [ 'lib/runTransitionHook.js', 420, 438 ]
+175 silly gunzTarPerm extractEntry lib/DOMUtils.js
+176 silly gunzTarPerm modified mode [ 'lib/DOMUtils.js', 420, 438 ]
+177 silly gunzTarPerm extractEntry lib/useBasename.js
+178 silly gunzTarPerm modified mode [ 'lib/useBasename.js', 420, 438 ]
+179 silly gunzTarPerm extractEntry lib/DOMStateStorage.js
+180 silly gunzTarPerm modified mode [ 'lib/DOMStateStorage.js', 420, 438 ]
+181 silly gunzTarPerm extractEntry lib/useBeforeUnload.js
+182 silly gunzTarPerm modified mode [ 'lib/useBeforeUnload.js', 420, 438 ]
+183 silly gunzTarPerm extractEntry lib/AsyncUtils.js
+184 silly gunzTarPerm modified mode [ 'lib/AsyncUtils.js', 420, 438 ]
+185 silly gunzTarPerm extractEntry lib/useQueries.js
+186 silly gunzTarPerm modified mode [ 'lib/useQueries.js', 420, 438 ]
+187 silly gunzTarPerm extractEntry lib/createMemoryHistory.js
+188 silly gunzTarPerm modified mode [ 'lib/createMemoryHistory.js', 420, 438 ]
+189 verbose write writing to C:\React\EAI\node_modules\history\package.json
+190 info preinstall history@1.13.0
+191 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\package.json
+192 silly prepareForInstallMany adding deep-equal@^1.0.0 from history dependencies
+193 silly prepareForInstallMany adding invariant@^2.0.0 from history dependencies
+194 silly prepareForInstallMany adding qs@^4.0.0 from history dependencies
+195 silly prepareForInstallMany adding warning@^2.0.0 from history dependencies
+196 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\package.json
+197 silly cache add args [ 'deep-equal@^1.0.0', null ]
+198 verbose cache add spec deep-equal@^1.0.0
+199 silly cache add args [ 'invariant@^2.0.0', null ]
+200 verbose cache add spec invariant@^2.0.0
+201 silly cache add parsed spec { raw: 'deep-equal@^1.0.0',
+201 silly cache add   scope: null,
+201 silly cache add   name: 'deep-equal',
+201 silly cache add   rawSpec: '^1.0.0',
+201 silly cache add   spec: '>=1.0.0 <2.0.0',
+201 silly cache add   type: 'range' }
+202 silly addNamed deep-equal@>=1.0.0 <2.0.0
+203 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for deep-equal
+204 silly addNameRange { name: 'deep-equal', range: '>=1.0.0 <2.0.0', hasData: false }
+205 silly mapToRegistry name deep-equal
+206 silly mapToRegistry using default registry
+207 silly mapToRegistry registry https://registry.npmjs.org/
+208 silly mapToRegistry uri https://registry.npmjs.org/deep-equal
+209 verbose addNameRange registry:https://registry.npmjs.org/deep-equal not in flight; fetching
+210 silly cache add parsed spec { raw: 'invariant@^2.0.0',
+210 silly cache add   scope: null,
+210 silly cache add   name: 'invariant',
+210 silly cache add   rawSpec: '^2.0.0',
+210 silly cache add   spec: '>=2.0.0 <3.0.0',
+210 silly cache add   type: 'range' }
+211 silly addNamed invariant@>=2.0.0 <3.0.0
+212 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for invariant
+213 silly addNameRange { name: 'invariant', range: '>=2.0.0 <3.0.0', hasData: false }
+214 silly mapToRegistry name invariant
+215 silly mapToRegistry using default registry
+216 silly mapToRegistry registry https://registry.npmjs.org/
+217 silly mapToRegistry uri https://registry.npmjs.org/invariant
+218 verbose addNameRange registry:https://registry.npmjs.org/invariant not in flight; fetching
+219 silly cache add args [ 'qs@^4.0.0', null ]
+220 verbose cache add spec qs@^4.0.0
+221 silly cache add parsed spec { raw: 'qs@^4.0.0',
+221 silly cache add   scope: null,
+221 silly cache add   name: 'qs',
+221 silly cache add   rawSpec: '^4.0.0',
+221 silly cache add   spec: '>=4.0.0 <5.0.0',
+221 silly cache add   type: 'range' }
+222 silly addNamed qs@>=4.0.0 <5.0.0
+223 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for qs
+224 silly addNameRange { name: 'qs', range: '>=4.0.0 <5.0.0', hasData: false }
+225 silly mapToRegistry name qs
+226 silly mapToRegistry using default registry
+227 silly mapToRegistry registry https://registry.npmjs.org/
+228 silly mapToRegistry uri https://registry.npmjs.org/qs
+229 verbose addNameRange registry:https://registry.npmjs.org/qs not in flight; fetching
+230 silly cache add args [ 'warning@^2.0.0', null ]
+231 verbose cache add spec warning@^2.0.0
+232 silly cache add parsed spec { raw: 'warning@^2.0.0',
+232 silly cache add   scope: null,
+232 silly cache add   name: 'warning',
+232 silly cache add   rawSpec: '^2.0.0',
+232 silly cache add   spec: '>=2.0.0 <3.0.0',
+232 silly cache add   type: 'range' }
+233 silly addNamed warning@>=2.0.0 <3.0.0
+234 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for warning
+235 silly addNameRange { name: 'warning', range: '>=2.0.0 <3.0.0', hasData: false }
+236 silly mapToRegistry name warning
+237 silly mapToRegistry using default registry
+238 silly mapToRegistry registry https://registry.npmjs.org/
+239 silly mapToRegistry uri https://registry.npmjs.org/warning
+240 verbose addNameRange registry:https://registry.npmjs.org/warning not in flight; fetching
+241 verbose request uri https://registry.npmjs.org/warning
+242 verbose request no auth needed
+243 info attempt registry request try #1 at 9:24:32 AM
+244 verbose etag "1K3VVFDR0VAVK3YXHWHQEMTMR"
+245 http request GET https://registry.npmjs.org/warning
+246 verbose request uri https://registry.npmjs.org/qs
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 9:24:32 AM
+249 verbose etag "5WVM21MS7UKNOWSWFEKKVJ5S1"
+250 http request GET https://registry.npmjs.org/qs
+251 verbose request uri https://registry.npmjs.org/invariant
+252 verbose request no auth needed
+253 info attempt registry request try #1 at 9:24:32 AM
+254 verbose etag "CZ5M3OO2AF69I9AIVW5ZT6VDL"
+255 http request GET https://registry.npmjs.org/invariant
+256 verbose request uri https://registry.npmjs.org/deep-equal
+257 verbose request no auth needed
+258 info attempt registry request try #1 at 9:24:32 AM
+259 verbose etag "AP5WROOM921L4QSRSDGAKP5W1"
+260 http request GET https://registry.npmjs.org/deep-equal
+261 http 304 https://registry.npmjs.org/qs
+262 silly get cb [ 304,
+262 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+262 silly get     via: '1.1 varnish',
+262 silly get     'cache-control': 'max-age=60',
+262 silly get     etag: '"5WVM21MS7UKNOWSWFEKKVJ5S1"',
+262 silly get     age: '16',
+262 silly get     connection: 'keep-alive',
+262 silly get     'x-served-by': 'cache-atl6220-ATL',
+262 silly get     'x-cache': 'HIT',
+262 silly get     'x-cache-hits': '1',
+262 silly get     'x-timer': 'S1447251873.095710,VS0,VE0',
+262 silly get     vary: 'Accept' } ]
+263 verbose etag https://registry.npmjs.org/qs from cache
+264 verbose get saving qs to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\qs\.cache.json
+265 http 304 https://registry.npmjs.org/warning
+266 silly get cb [ 304,
+266 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+266 silly get     via: '1.1 varnish',
+266 silly get     'cache-control': 'max-age=60',
+266 silly get     etag: '"1K3VVFDR0VAVK3YXHWHQEMTMR"',
+266 silly get     age: '22',
+266 silly get     connection: 'keep-alive',
+266 silly get     'x-served-by': 'cache-atl6226-ATL',
+266 silly get     'x-cache': 'HIT',
+266 silly get     'x-cache-hits': '2',
+266 silly get     'x-timer': 'S1447251873.102025,VS0,VE0',
+266 silly get     vary: 'Accept' } ]
+267 verbose etag https://registry.npmjs.org/warning from cache
+268 verbose get saving warning to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\warning\.cache.json
+269 http 304 https://registry.npmjs.org/deep-equal
+270 silly get cb [ 304,
+270 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+270 silly get     via: '1.1 varnish',
+270 silly get     'cache-control': 'max-age=60',
+270 silly get     etag: '"AP5WROOM921L4QSRSDGAKP5W1"',
+270 silly get     age: '19',
+270 silly get     connection: 'keep-alive',
+270 silly get     'x-served-by': 'cache-atl6232-ATL',
+270 silly get     'x-cache': 'HIT',
+270 silly get     'x-cache-hits': '1',
+270 silly get     'x-timer': 'S1447251873.105160,VS0,VE0',
+270 silly get     vary: 'Accept' } ]
+271 verbose etag https://registry.npmjs.org/deep-equal from cache
+272 verbose get saving deep-equal to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\deep-equal\.cache.json
+273 http 304 https://registry.npmjs.org/invariant
+274 silly get cb [ 304,
+274 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+274 silly get     via: '1.1 varnish',
+274 silly get     'cache-control': 'max-age=60',
+274 silly get     etag: '"CZ5M3OO2AF69I9AIVW5ZT6VDL"',
+274 silly get     age: '2',
+274 silly get     connection: 'keep-alive',
+274 silly get     'x-served-by': 'cache-atl6225-ATL',
+274 silly get     'x-cache': 'HIT',
+274 silly get     'x-cache-hits': '32',
+274 silly get     'x-timer': 'S1447251873.110635,VS0,VE0',
+274 silly get     vary: 'Accept' } ]
+275 verbose etag https://registry.npmjs.org/invariant from cache
+276 verbose get saving invariant to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\invariant\.cache.json
+277 silly addNameRange number 2 { name: 'warning', range: '>=2.0.0 <3.0.0', hasData: true }
+278 silly addNameRange versions [ 'warning', [ '1.0.0', '1.0.1', '1.0.2', '2.0.0', '2.1.0' ] ]
+279 silly addNamed warning@2.1.0
+280 verbose addNamed "2.1.0" is a plain semver version for warning
+281 silly addNameRange number 2 { name: 'qs', range: '>=4.0.0 <5.0.0', hasData: true }
+282 silly addNameRange versions [ 'qs',
+282 silly addNameRange   [ '0.0.1',
+282 silly addNameRange     '0.0.2',
+282 silly addNameRange     '0.0.3',
+282 silly addNameRange     '0.0.4',
+282 silly addNameRange     '0.0.5',
+282 silly addNameRange     '0.0.6',
+282 silly addNameRange     '0.0.7',
+282 silly addNameRange     '0.1.0',
+282 silly addNameRange     '0.2.0',
+282 silly addNameRange     '0.3.0',
+282 silly addNameRange     '0.3.1',
+282 silly addNameRange     '0.3.2',
+282 silly addNameRange     '0.4.0',
+282 silly addNameRange     '0.4.1',
+282 silly addNameRange     '0.4.2',
+282 silly addNameRange     '0.5.0',
+282 silly addNameRange     '0.5.1',
+282 silly addNameRange     '0.5.2',
+282 silly addNameRange     '0.5.3',
+282 silly addNameRange     '0.5.4',
+282 silly addNameRange     '0.5.5',
+282 silly addNameRange     '0.5.6',
+282 silly addNameRange     '0.6.0',
+282 silly addNameRange     '0.6.1',
+282 silly addNameRange     '0.6.2',
+282 silly addNameRange     '0.6.3',
+282 silly addNameRange     '0.6.4',
+282 silly addNameRange     '0.6.5',
+282 silly addNameRange     '0.6.6',
+282 silly addNameRange     '1.0.0',
+282 silly addNameRange     '1.0.1',
+282 silly addNameRange     '1.0.2',
+282 silly addNameRange     '1.1.0',
+282 silly addNameRange     '1.2.0',
+282 silly addNameRange     '1.2.1',
+282 silly addNameRange     '1.2.2',
+282 silly addNameRange     '2.0.0',
+282 silly addNameRange     '2.1.0',
+282 silly addNameRange     '2.2.0',
+282 silly addNameRange     '2.2.1',
+282 silly addNameRange     '2.2.2',
+282 silly addNameRange     '2.2.3',
+282 silly addNameRange     '2.2.4',
+282 silly addNameRange     '2.2.5',
+282 silly addNameRange     '2.3.0',
+282 silly addNameRange     '2.3.1',
+282 silly addNameRange     '2.3.2',
+282 silly addNameRange     '2.3.3',
+282 silly addNameRange     '2.4.0',
+282 silly addNameRange     '2.4.1',
+282 silly addNameRange     '2.4.2',
+282 silly addNameRange     '3.0.0',
+282 silly addNameRange     '3.1.0',
+282 silly addNameRange     '4.0.0',
+282 silly addNameRange     '5.0.0',
+282 silly addNameRange     '5.1.0',
+282 silly addNameRange     '5.2.0',
+282 silly addNameRange     '6.0.0' ] ]
+283 silly addNamed qs@4.0.0
+284 verbose addNamed "4.0.0" is a plain semver version for qs
+285 silly addNameRange number 2 { name: 'deep-equal', range: '>=1.0.0 <2.0.0', hasData: true }
+286 silly addNameRange versions [ 'deep-equal',
+286 silly addNameRange   [ '0.0.0',
+286 silly addNameRange     '0.1.0',
+286 silly addNameRange     '0.1.1',
+286 silly addNameRange     '0.1.2',
+286 silly addNameRange     '0.2.0',
+286 silly addNameRange     '0.2.1',
+286 silly addNameRange     '0.2.2',
+286 silly addNameRange     '1.0.0',
+286 silly addNameRange     '1.0.1' ] ]
+287 silly addNamed deep-equal@1.0.1
+288 verbose addNamed "1.0.1" is a plain semver version for deep-equal
+289 silly addNameRange number 2 { name: 'invariant', range: '>=2.0.0 <3.0.0', hasData: true }
+290 silly addNameRange versions [ 'invariant',
+290 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '2.0.0', '2.1.0', '2.1.1', '2.1.2' ] ]
+291 silly addNamed invariant@2.1.2
+292 verbose addNamed "2.1.2" is a plain semver version for invariant
+293 silly cache afterAdd warning@2.1.0
+294 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\warning\2.1.0\package\package.json not in flight; writing
+295 silly cache afterAdd qs@4.0.0
+296 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\qs\4.0.0\package\package.json not in flight; writing
+297 silly cache afterAdd deep-equal@1.0.1
+298 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\deep-equal\1.0.1\package\package.json not in flight; writing
+299 silly cache afterAdd invariant@2.1.2
+300 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\invariant\2.1.2\package\package.json not in flight; writing
+301 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\deep-equal\1.0.1\package\package.json written
+302 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\warning\2.1.0\package\package.json written
+303 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\invariant\2.1.2\package\package.json written
+304 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\qs\4.0.0\package\package.json written
+305 silly install resolved [ { name: 'deep-equal',
+305 silly install resolved     version: '1.0.1',
+305 silly install resolved     description: 'node\'s assert.deepEqual algorithm',
+305 silly install resolved     main: 'index.js',
+305 silly install resolved     directories: { lib: '.', example: 'example', test: 'test' },
+305 silly install resolved     scripts: { test: 'tape test/*.js' },
+305 silly install resolved     devDependencies: { tape: '^3.5.0' },
+305 silly install resolved     repository:
+305 silly install resolved      { type: 'git',
+305 silly install resolved        url: 'git+ssh://git@github.com/substack/node-deep-equal.git' },
+305 silly install resolved     keywords: [ 'equality', 'equal', 'compare' ],
+305 silly install resolved     author:
+305 silly install resolved      { name: 'James Halliday',
+305 silly install resolved        email: 'mail@substack.net',
+305 silly install resolved        url: 'http://substack.net' },
+305 silly install resolved     license: 'MIT',
+305 silly install resolved     testling: { files: 'test/*.js', browsers: [Object] },
+305 silly install resolved     gitHead: '59c511f5aeae19e3dd1de054077a789d7302be34',
+305 silly install resolved     bugs: { url: 'https://github.com/substack/node-deep-equal/issues' },
+305 silly install resolved     homepage: 'https://github.com/substack/node-deep-equal#readme',
+305 silly install resolved     _id: 'deep-equal@1.0.1',
+305 silly install resolved     _shasum: 'f5d260292b660e084eff4cdbc9f08ad3247448b5',
+305 silly install resolved     _from: 'deep-equal@>=1.0.0 <2.0.0',
+305 silly install resolved     _npmVersion: '3.2.2',
+305 silly install resolved     _nodeVersion: '2.4.0',
+305 silly install resolved     _npmUser: { name: 'substack', email: 'substack@gmail.com' },
+305 silly install resolved     dist:
+305 silly install resolved      { shasum: 'f5d260292b660e084eff4cdbc9f08ad3247448b5',
+305 silly install resolved        tarball: 'http://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz' },
+305 silly install resolved     maintainers: [ [Object] ],
+305 silly install resolved     _resolved: 'https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz',
+305 silly install resolved     readme: 'ERROR: No README data found!' },
+305 silly install resolved   { name: 'warning',
+305 silly install resolved     version: '2.1.0',
+305 silly install resolved     description: 'A mirror of Facebook\'s Warning',
+305 silly install resolved     main: 'warning.js',
+305 silly install resolved     browser: 'browser.js',
+305 silly install resolved     browserify: { transform: [Object] },
+305 silly install resolved     files: [ 'browser.js', 'warning.js' ],
+305 silly install resolved     scripts: { test: 'NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js' },
+305 silly install resolved     dependencies: { 'loose-envify': '^1.0.0' },
+305 silly install resolved     devDependencies: { browserify: '^11.0.1', tap: '^1.4.0' },
+305 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/r3dm/warning.git' },
+305 silly install resolved     keywords: [ 'warning', 'facebook', 'react', 'invariant' ],
+305 silly install resolved     author:
+305 silly install resolved      { name: 'Berkeley Martinez',
+305 silly install resolved        email: 'berkeley@r3dm.com',
+305 silly install resolved        url: 'http://r3dm.com' },
+305 silly install resolved     license: 'BSD-2-Clause',
+305 silly install resolved     bugs: { url: 'https://github.com/r3dm/warning/issues' },
+305 silly install resolved     homepage: 'https://github.com/r3dm/warning',
+305 silly install resolved     gitHead: 'b7d56e3f6c21c3ee05af617222d16c7d80118443',
+305 silly install resolved     _id: 'warning@2.1.0',
+305 silly install resolved     _shasum: '21220d9c63afc77a8c92111e011af705ce0c6901',
+305 silly install resolved     _from: 'warning@>=2.0.0 <3.0.0',
+305 silly install resolved     _npmVersion: '2.11.1',
+305 silly install resolved     _nodeVersion: '1.6.4',
+305 silly install resolved     _npmUser: { name: 'berkeleytrue', email: 'berkeley@robotie.com' },
+305 silly install resolved     maintainers: [ [Object] ],
+305 silly install resolved     dist:
+305 silly install resolved      { shasum: '21220d9c63afc77a8c92111e011af705ce0c6901',
+305 silly install resolved        tarball: 'http://registry.npmjs.org/warning/-/warning-2.1.0.tgz' },
+305 silly install resolved     directories: {},
+305 silly install resolved     _resolved: 'https://registry.npmjs.org/warning/-/warning-2.1.0.tgz',
+305 silly install resolved     readme: 'ERROR: No README data found!' },
+305 silly install resolved   { name: 'invariant',
+305 silly install resolved     version: '2.1.2',
+305 silly install resolved     description: 'invariant',
+305 silly install resolved     keywords: [ 'test' ],
+305 silly install resolved     license: 'BSD-3-Clause',
+305 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+305 silly install resolved     files: [ 'invariant.js', 'browser.js' ],
+305 silly install resolved     repository:
+305 silly install resolved      { type: 'git',
+305 silly install resolved        url: 'git+https://github.com/zertosh/invariant.git' },
+305 silly install resolved     scripts: { test: 'NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js' },
+305 silly install resolved     dependencies: { 'loose-envify': '^1.0.0' },
+305 silly install resolved     devDependencies: { browserify: '^11.0.1', tap: '^1.4.0' },
+305 silly install resolved     main: 'invariant.js',
+305 silly install resolved     browser: 'browser.js',
+305 silly install resolved     browserify: { transform: [Object] },
+305 silly install resolved     gitHead: '1555880c5bcc46e2eda25fae84d62fd28b5c9090',
+305 silly install resolved     bugs: { url: 'https://github.com/zertosh/invariant/issues' },
+305 silly install resolved     homepage: 'https://github.com/zertosh/invariant#readme',
+305 silly install resolved     _id: 'invariant@2.1.2',
+305 silly install resolved     _shasum: '43f372e09b57414b85a5ebc904dc69260d161129',
+305 silly install resolved     _from: 'invariant@>=2.0.0 <3.0.0',
+305 silly install resolved     _npmVersion: '2.14.3',
+305 silly install resolved     _nodeVersion: '4.1.0',
+305 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+305 silly install resolved     maintainers: [ [Object] ],
+305 silly install resolved     dist:
+305 silly install resolved      { shasum: '43f372e09b57414b85a5ebc904dc69260d161129',
+305 silly install resolved        tarball: 'http://registry.npmjs.org/invariant/-/invariant-2.1.2.tgz' },
+305 silly install resolved     directories: {},
+305 silly install resolved     _resolved: 'https://registry.npmjs.org/invariant/-/invariant-2.1.2.tgz',
+305 silly install resolved     readme: 'ERROR: No README data found!' },
+305 silly install resolved   { name: 'qs',
+305 silly install resolved     version: '4.0.0',
+305 silly install resolved     description: 'A querystring parser that supports nesting and arrays, with a depth limit',
+305 silly install resolved     homepage: 'https://github.com/hapijs/qs',
+305 silly install resolved     main: 'lib/index.js',
+305 silly install resolved     dependencies: {},
+305 silly install resolved     devDependencies: { browserify: '^10.2.1', code: '1.x.x', lab: '5.x.x' },
+305 silly install resolved     scripts:
+305 silly install resolved      { test: 'lab -a code -t 100 -L',
+305 silly install resolved        'test-cov-html': 'lab -a code -r html -o coverage.html',
+305 silly install resolved        dist: 'browserify --standalone Qs lib/index.js > dist/qs.js' },
+305 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/hapijs/qs.git' },
+305 silly install resolved     keywords: [ 'querystring', 'qs' ],
+305 silly install resolved     license: 'BSD-3-Clause',
+305 silly install resolved     gitHead: 'e573dd08eae6cce30d2202704691a102dfa3782a',
+305 silly install resolved     bugs: { url: 'https://github.com/hapijs/qs/issues' },
+305 silly install resolved     _id: 'qs@4.0.0',
+305 silly install resolved     _shasum: 'c31d9b74ec27df75e543a86c78728ed8d4623607',
+305 silly install resolved     _from: 'qs@>=4.0.0 <5.0.0',
+305 silly install resolved     _npmVersion: '2.12.0',
+305 silly install resolved     _nodeVersion: '0.12.4',
+305 silly install resolved     _npmUser: { name: 'nlf', email: 'quitlahok@gmail.com' },
+305 silly install resolved     dist:
+305 silly install resolved      { shasum: 'c31d9b74ec27df75e543a86c78728ed8d4623607',
+305 silly install resolved        tarball: 'http://registry.npmjs.org/qs/-/qs-4.0.0.tgz' },
+305 silly install resolved     maintainers: [ [Object], [Object] ],
+305 silly install resolved     directories: {},
+305 silly install resolved     _resolved: 'https://registry.npmjs.org/qs/-/qs-4.0.0.tgz',
+305 silly install resolved     readme: 'ERROR: No README data found!' } ]
+306 info install deep-equal@1.0.1 into C:\React\EAI\node_modules\history
+307 info install warning@2.1.0 into C:\React\EAI\node_modules\history
+308 info install invariant@2.1.2 into C:\React\EAI\node_modules\history
+309 info install qs@4.0.0 into C:\React\EAI\node_modules\history
+310 info installOne deep-equal@1.0.1
+311 verbose installOne of deep-equal to C:\React\EAI\node_modules\history not in flight; installing
+312 info installOne warning@2.1.0
+313 verbose installOne of warning to C:\React\EAI\node_modules\history not in flight; installing
+314 info installOne invariant@2.1.2
+315 verbose installOne of invariant to C:\React\EAI\node_modules\history not in flight; installing
+316 info installOne qs@4.0.0
+317 verbose installOne of qs to C:\React\EAI\node_modules\history not in flight; installing
+318 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\deep-equal-b60ed08dfbb3e3ea.lock for C:\React\EAI\node_modules\history\node_modules\deep-equal
+319 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\invariant-ff736b636e998420.lock for C:\React\EAI\node_modules\history\node_modules\invariant
+320 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\qs-38f7d29d1b97c5ec.lock for C:\React\EAI\node_modules\history\node_modules\qs
+321 silly install write writing deep-equal 1.0.1 to C:\React\EAI\node_modules\history\node_modules\deep-equal
+322 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\warning-9cd854b019676b2c.lock for C:\React\EAI\node_modules\history\node_modules\warning
+323 silly install write writing invariant 2.1.2 to C:\React\EAI\node_modules\history\node_modules\invariant
+324 silly install write writing qs 4.0.0 to C:\React\EAI\node_modules\history\node_modules\qs
+325 silly install write writing warning 2.1.0 to C:\React\EAI\node_modules\history\node_modules\warning
+326 verbose unbuild node_modules\history\node_modules\deep-equal
+327 verbose unbuild node_modules\history\node_modules\invariant
+328 verbose unbuild node_modules\history\node_modules\qs
+329 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\deep-equal is being purged from base C:\React\EAI
+330 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\deep-equal
+331 verbose unbuild node_modules\history\node_modules\warning
+332 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant is being purged from base C:\React\EAI
+333 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant
+334 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\deep-equal\1.0.1\package.tgz
+335 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\deep-equal
+336 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\deep-equal is being purged
+337 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\deep-equal
+338 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\qs is being purged from base C:\React\EAI
+339 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\qs
+340 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\invariant\2.1.2\package.tgz
+341 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\invariant
+342 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant is being purged
+343 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant
+344 silly gunzTarPerm modes [ '777', '666' ]
+345 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\qs\4.0.0\package.tgz
+346 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\qs
+347 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\qs is being purged
+348 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\qs
+349 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning is being purged from base C:\React\EAI
+350 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning
+351 silly gunzTarPerm modes [ '777', '666' ]
+352 silly gunzTarPerm modes [ '777', '666' ]
+353 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\warning\2.1.0\package.tgz
+354 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\warning
+355 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning is being purged
+356 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning
+357 silly gunzTarPerm modes [ '777', '666' ]
+358 silly gunzTarPerm extractEntry package.json
+359 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+360 silly gunzTarPerm extractEntry package.json
+361 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+362 silly gunzTarPerm extractEntry package.json
+363 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+364 silly gunzTarPerm extractEntry package.json
+365 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+366 silly gunzTarPerm extractEntry LICENSE
+367 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+368 silly gunzTarPerm extractEntry index.js
+369 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+370 silly gunzTarPerm extractEntry README.md
+371 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+372 silly gunzTarPerm extractEntry browser.js
+373 silly gunzTarPerm modified mode [ 'browser.js', 420, 438 ]
+374 silly gunzTarPerm extractEntry .npmignore
+375 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+376 silly gunzTarPerm extractEntry README.md
+377 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+378 silly gunzTarPerm extractEntry README.md
+379 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+380 silly gunzTarPerm extractEntry browser.js
+381 silly gunzTarPerm modified mode [ 'browser.js', 420, 438 ]
+382 silly gunzTarPerm extractEntry .travis.yml
+383 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+384 silly gunzTarPerm extractEntry example/cmp.js
+385 silly gunzTarPerm modified mode [ 'example/cmp.js', 420, 438 ]
+386 silly gunzTarPerm extractEntry invariant.js
+387 silly gunzTarPerm modified mode [ 'invariant.js', 420, 438 ]
+388 silly gunzTarPerm extractEntry CHANGELOG.md
+389 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+390 silly gunzTarPerm extractEntry LICENSE
+391 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+392 silly gunzTarPerm extractEntry CHANGELOG.md
+393 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+394 silly gunzTarPerm extractEntry warning.js
+395 silly gunzTarPerm modified mode [ 'warning.js', 420, 438 ]
+396 silly gunzTarPerm extractEntry CHANGELOG.md
+397 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+398 silly gunzTarPerm extractEntry lib/is_arguments.js
+399 silly gunzTarPerm modified mode [ 'lib/is_arguments.js', 420, 438 ]
+400 silly gunzTarPerm extractEntry lib/keys.js
+401 silly gunzTarPerm modified mode [ 'lib/keys.js', 420, 438 ]
+402 silly gunzTarPerm extractEntry CONTRIBUTING.md
+403 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 438 ]
+404 silly gunzTarPerm extractEntry LICENSE.md
+405 silly gunzTarPerm modified mode [ 'LICENSE.md', 420, 438 ]
+406 silly gunzTarPerm extractEntry readme.markdown
+407 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 438 ]
+408 silly gunzTarPerm extractEntry test/cmp.js
+409 silly gunzTarPerm modified mode [ 'test/cmp.js', 420, 438 ]
+410 silly gunzTarPerm extractEntry .eslintignore
+411 silly gunzTarPerm modified mode [ '.eslintignore', 420, 438 ]
+412 silly gunzTarPerm extractEntry bower.json
+413 silly gunzTarPerm modified mode [ 'bower.json', 420, 438 ]
+414 silly gunzTarPerm extractEntry lib/index.js
+415 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+416 silly gunzTarPerm extractEntry lib/parse.js
+417 silly gunzTarPerm modified mode [ 'lib/parse.js', 420, 438 ]
+418 silly gunzTarPerm extractEntry lib/stringify.js
+419 silly gunzTarPerm modified mode [ 'lib/stringify.js', 420, 438 ]
+420 silly gunzTarPerm extractEntry lib/utils.js
+421 silly gunzTarPerm modified mode [ 'lib/utils.js', 420, 438 ]
+422 silly gunzTarPerm extractEntry .travis.yml
+423 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+424 silly gunzTarPerm extractEntry test/parse.js
+425 silly gunzTarPerm modified mode [ 'test/parse.js', 420, 438 ]
+426 verbose write writing to C:\React\EAI\node_modules\history\node_modules\invariant\package.json
+427 verbose write writing to C:\React\EAI\node_modules\history\node_modules\warning\package.json
+428 silly gunzTarPerm extractEntry test/stringify.js
+429 silly gunzTarPerm modified mode [ 'test/stringify.js', 420, 438 ]
+430 silly gunzTarPerm extractEntry test/utils.js
+431 silly gunzTarPerm modified mode [ 'test/utils.js', 420, 438 ]
+432 info preinstall warning@2.1.0
+433 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\package.json
+434 info preinstall invariant@2.1.2
+435 silly prepareForInstallMany adding loose-envify@^1.0.0 from warning dependencies
+436 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\package.json
+437 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\package.json
+438 silly cache add args [ 'loose-envify@^1.0.0', null ]
+439 verbose cache add spec loose-envify@^1.0.0
+440 silly cache add parsed spec { raw: 'loose-envify@^1.0.0',
+440 silly cache add   scope: null,
+440 silly cache add   name: 'loose-envify',
+440 silly cache add   rawSpec: '^1.0.0',
+440 silly cache add   spec: '>=1.0.0 <2.0.0',
+440 silly cache add   type: 'range' }
+441 silly addNamed loose-envify@>=1.0.0 <2.0.0
+442 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+443 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+444 silly mapToRegistry name loose-envify
+445 silly mapToRegistry using default registry
+446 silly mapToRegistry registry https://registry.npmjs.org/
+447 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+448 verbose addNameRange registry:https://registry.npmjs.org/loose-envify not in flight; fetching
+449 silly prepareForInstallMany adding loose-envify@^1.0.0 from invariant dependencies
+450 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\package.json
+451 verbose write writing to C:\React\EAI\node_modules\history\node_modules\deep-equal\package.json
+452 verbose request uri https://registry.npmjs.org/loose-envify
+453 verbose request no auth needed
+454 info attempt registry request try #1 at 9:24:33 AM
+455 verbose etag "2L56VY41TJJXRF6O0PIETR3YS"
+456 http request GET https://registry.npmjs.org/loose-envify
+457 silly cache add args [ 'loose-envify@^1.0.0', null ]
+458 verbose cache add spec loose-envify@^1.0.0
+459 silly cache add parsed spec { raw: 'loose-envify@^1.0.0',
+459 silly cache add   scope: null,
+459 silly cache add   name: 'loose-envify',
+459 silly cache add   rawSpec: '^1.0.0',
+459 silly cache add   spec: '>=1.0.0 <2.0.0',
+459 silly cache add   type: 'range' }
+460 silly addNamed loose-envify@>=1.0.0 <2.0.0
+461 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for loose-envify
+462 silly addNameRange { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: false }
+463 silly mapToRegistry name loose-envify
+464 silly mapToRegistry using default registry
+465 silly mapToRegistry registry https://registry.npmjs.org/
+466 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+467 verbose addNameRange registry:https://registry.npmjs.org/loose-envify already in flight; waiting
+468 info preinstall deep-equal@1.0.1
+469 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\deep-equal\package.json
+470 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\deep-equal\package.json
+471 silly install resolved []
+472 verbose about to build C:\React\EAI\node_modules\history\node_modules\deep-equal
+473 info build C:\React\EAI\node_modules\history\node_modules\deep-equal
+474 info linkStuff deep-equal@1.0.1
+475 silly linkStuff deep-equal@1.0.1 has C:\React\EAI\node_modules\history\node_modules as its parent node_modules
+476 verbose linkBins deep-equal@1.0.1
+477 verbose linkMans deep-equal@1.0.1
+478 verbose rebuildBundles deep-equal@1.0.1
+479 info install deep-equal@1.0.1
+480 info postinstall deep-equal@1.0.1
+481 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\deep-equal-b60ed08dfbb3e3ea.lock for C:\React\EAI\node_modules\history\node_modules\deep-equal
+482 verbose write writing to C:\React\EAI\node_modules\history\node_modules\qs\package.json
+483 info preinstall qs@4.0.0
+484 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\qs\package.json
+485 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\qs\package.json
+486 silly install resolved []
+487 verbose about to build C:\React\EAI\node_modules\history\node_modules\qs
+488 info build C:\React\EAI\node_modules\history\node_modules\qs
+489 info linkStuff qs@4.0.0
+490 silly linkStuff qs@4.0.0 has C:\React\EAI\node_modules\history\node_modules as its parent node_modules
+491 verbose linkBins qs@4.0.0
+492 verbose linkMans qs@4.0.0
+493 verbose rebuildBundles qs@4.0.0
+494 info install qs@4.0.0
+495 info postinstall qs@4.0.0
+496 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\qs-38f7d29d1b97c5ec.lock for C:\React\EAI\node_modules\history\node_modules\qs
+497 http 304 https://registry.npmjs.org/loose-envify
+498 silly get cb [ 304,
+498 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+498 silly get     via: '1.1 varnish',
+498 silly get     'cache-control': 'max-age=60',
+498 silly get     etag: '"2L56VY41TJJXRF6O0PIETR3YS"',
+498 silly get     age: '32',
+498 silly get     connection: 'keep-alive',
+498 silly get     'x-served-by': 'cache-atl6220-ATL',
+498 silly get     'x-cache': 'HIT',
+498 silly get     'x-cache-hits': '1',
+498 silly get     'x-timer': 'S1447251873.419263,VS0,VE0',
+498 silly get     vary: 'Accept' } ]
+499 verbose etag https://registry.npmjs.org/loose-envify from cache
+500 verbose get saving loose-envify to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\loose-envify\.cache.json
+501 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+502 silly addNameRange versions [ 'loose-envify', [ '1.0.0', '1.1.0' ] ]
+503 silly addNamed loose-envify@1.1.0
+504 verbose addNamed "1.1.0" is a plain semver version for loose-envify
+505 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.0.0 <2.0.0', hasData: true }
+506 silly addNameRange versions [ 'loose-envify', [ '1.0.0', '1.1.0' ] ]
+507 silly addNamed loose-envify@1.1.0
+508 verbose addNamed "1.1.0" is a plain semver version for loose-envify
+509 silly cache afterAdd loose-envify@1.1.0
+510 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\loose-envify\1.1.0\package\package.json not in flight; writing
+511 silly cache afterAdd loose-envify@1.1.0
+512 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\loose-envify\1.1.0\package\package.json already in flight; not writing
+513 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\loose-envify\1.1.0\package\package.json written
+514 silly install resolved [ { name: 'loose-envify',
+514 silly install resolved     version: '1.1.0',
+514 silly install resolved     description: 'Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST',
+514 silly install resolved     keywords:
+514 silly install resolved      [ 'environment',
+514 silly install resolved        'variables',
+514 silly install resolved        'browserify',
+514 silly install resolved        'browserify-transform',
+514 silly install resolved        'transform',
+514 silly install resolved        'source',
+514 silly install resolved        'configuration' ],
+514 silly install resolved     homepage: 'https://github.com/zertosh/loose-envify',
+514 silly install resolved     license: 'MIT',
+514 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+514 silly install resolved     repository:
+514 silly install resolved      { type: 'git',
+514 silly install resolved        url: 'git://github.com/zertosh/loose-envify.git' },
+514 silly install resolved     scripts: { test: 'tap test/*.js' },
+514 silly install resolved     dependencies: { 'js-tokens': '^1.0.1' },
+514 silly install resolved     devDependencies: { browserify: '^11.0.1', envify: '^3.4.0', tap: '^1.4.0' },
+514 silly install resolved     gitHead: 'f536f4fdbde317d77827ac8655c6c8473928b9e1',
+514 silly install resolved     bugs: { url: 'https://github.com/zertosh/loose-envify/issues' },
+514 silly install resolved     _id: 'loose-envify@1.1.0',
+514 silly install resolved     _shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+514 silly install resolved     _from: 'loose-envify@>=1.0.0 <2.0.0',
+514 silly install resolved     _npmVersion: '2.14.4',
+514 silly install resolved     _nodeVersion: '4.1.2',
+514 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+514 silly install resolved     maintainers: [ [Object] ],
+514 silly install resolved     dist:
+514 silly install resolved      { shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+514 silly install resolved        tarball: 'http://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz' },
+514 silly install resolved     directories: {},
+514 silly install resolved     _resolved: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz',
+514 silly install resolved     readme: 'ERROR: No README data found!' } ]
+515 info install loose-envify@1.1.0 into C:\React\EAI\node_modules\history\node_modules\warning
+516 info installOne loose-envify@1.1.0
+517 verbose installOne of loose-envify to C:\React\EAI\node_modules\history\node_modules\warning not in flight; installing
+518 silly install resolved [ { name: 'loose-envify',
+518 silly install resolved     version: '1.1.0',
+518 silly install resolved     description: 'Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST',
+518 silly install resolved     keywords:
+518 silly install resolved      [ 'environment',
+518 silly install resolved        'variables',
+518 silly install resolved        'browserify',
+518 silly install resolved        'browserify-transform',
+518 silly install resolved        'transform',
+518 silly install resolved        'source',
+518 silly install resolved        'configuration' ],
+518 silly install resolved     homepage: 'https://github.com/zertosh/loose-envify',
+518 silly install resolved     license: 'MIT',
+518 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+518 silly install resolved     repository:
+518 silly install resolved      { type: 'git',
+518 silly install resolved        url: 'git://github.com/zertosh/loose-envify.git' },
+518 silly install resolved     scripts: { test: 'tap test/*.js' },
+518 silly install resolved     dependencies: { 'js-tokens': '^1.0.1' },
+518 silly install resolved     devDependencies: { browserify: '^11.0.1', envify: '^3.4.0', tap: '^1.4.0' },
+518 silly install resolved     gitHead: 'f536f4fdbde317d77827ac8655c6c8473928b9e1',
+518 silly install resolved     bugs: { url: 'https://github.com/zertosh/loose-envify/issues' },
+518 silly install resolved     _id: 'loose-envify@1.1.0',
+518 silly install resolved     _shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+518 silly install resolved     _from: 'loose-envify@>=1.0.0 <2.0.0',
+518 silly install resolved     _npmVersion: '2.14.4',
+518 silly install resolved     _nodeVersion: '4.1.2',
+518 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+518 silly install resolved     maintainers: [ [Object] ],
+518 silly install resolved     dist:
+518 silly install resolved      { shasum: '527582d62cff4e04da3f9976c7110d3392ec7e0c',
+518 silly install resolved        tarball: 'http://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz' },
+518 silly install resolved     directories: {},
+518 silly install resolved     _resolved: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.1.0.tgz',
+518 silly install resolved     readme: 'ERROR: No README data found!' } ]
+519 info install loose-envify@1.1.0 into C:\React\EAI\node_modules\history\node_modules\invariant
+520 info installOne loose-envify@1.1.0
+521 verbose installOne of loose-envify to C:\React\EAI\node_modules\history\node_modules\invariant not in flight; installing
+522 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\loose-envify-684e048d7868f780.lock for C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+523 silly install write writing loose-envify 1.1.0 to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+524 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\loose-envify-e7734a7603b576e0.lock for C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+525 silly install write writing loose-envify 1.1.0 to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+526 verbose unbuild node_modules\history\node_modules\warning\node_modules\loose-envify
+527 verbose unbuild node_modules\history\node_modules\invariant\node_modules\loose-envify
+528 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify is being purged from base C:\React\EAI
+529 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+530 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\loose-envify\1.1.0\package.tgz
+531 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+532 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify is being purged
+533 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+534 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify is being purged from base C:\React\EAI
+535 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+536 silly gunzTarPerm modes [ '777', '666' ]
+537 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\loose-envify\1.1.0\package.tgz
+538 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+539 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify is being purged
+540 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+541 silly gunzTarPerm modes [ '777', '666' ]
+542 silly gunzTarPerm extractEntry package.json
+543 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+544 silly gunzTarPerm extractEntry package.json
+545 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+546 silly gunzTarPerm extractEntry .npmignore
+547 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+548 silly gunzTarPerm extractEntry README.md
+549 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+550 silly gunzTarPerm extractEntry .npmignore
+551 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+552 silly gunzTarPerm extractEntry README.md
+553 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+554 silly gunzTarPerm extractEntry index.js
+555 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+556 silly gunzTarPerm extractEntry custom.js
+557 silly gunzTarPerm modified mode [ 'custom.js', 420, 438 ]
+558 silly gunzTarPerm extractEntry index.js
+559 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+560 silly gunzTarPerm extractEntry custom.js
+561 silly gunzTarPerm modified mode [ 'custom.js', 420, 438 ]
+562 silly gunzTarPerm extractEntry loose-envify.js
+563 silly gunzTarPerm modified mode [ 'loose-envify.js', 420, 438 ]
+564 silly gunzTarPerm extractEntry replace.js
+565 silly gunzTarPerm modified mode [ 'replace.js', 420, 438 ]
+566 silly gunzTarPerm extractEntry loose-envify.js
+567 silly gunzTarPerm modified mode [ 'loose-envify.js', 420, 438 ]
+568 silly gunzTarPerm extractEntry replace.js
+569 silly gunzTarPerm modified mode [ 'replace.js', 420, 438 ]
+570 verbose write writing to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\package.json
+571 verbose write writing to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\package.json
+572 info preinstall loose-envify@1.1.0
+573 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\package.json
+574 info preinstall loose-envify@1.1.0
+575 silly prepareForInstallMany adding js-tokens@^1.0.1 from loose-envify dependencies
+576 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\package.json
+577 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\package.json
+578 silly cache add args [ 'js-tokens@^1.0.1', null ]
+579 verbose cache add spec js-tokens@^1.0.1
+580 silly cache add parsed spec { raw: 'js-tokens@^1.0.1',
+580 silly cache add   scope: null,
+580 silly cache add   name: 'js-tokens',
+580 silly cache add   rawSpec: '^1.0.1',
+580 silly cache add   spec: '>=1.0.1 <2.0.0',
+580 silly cache add   type: 'range' }
+581 silly addNamed js-tokens@>=1.0.1 <2.0.0
+582 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+583 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+584 silly mapToRegistry name js-tokens
+585 silly mapToRegistry using default registry
+586 silly mapToRegistry registry https://registry.npmjs.org/
+587 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+588 verbose addNameRange registry:https://registry.npmjs.org/js-tokens not in flight; fetching
+589 silly prepareForInstallMany adding js-tokens@^1.0.1 from loose-envify dependencies
+590 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\package.json
+591 verbose request uri https://registry.npmjs.org/js-tokens
+592 verbose request no auth needed
+593 info attempt registry request try #1 at 9:24:33 AM
+594 verbose etag "F4N7TBLBJ8Z40VG7DPO546R7U"
+595 http request GET https://registry.npmjs.org/js-tokens
+596 silly cache add args [ 'js-tokens@^1.0.1', null ]
+597 verbose cache add spec js-tokens@^1.0.1
+598 silly cache add parsed spec { raw: 'js-tokens@^1.0.1',
+598 silly cache add   scope: null,
+598 silly cache add   name: 'js-tokens',
+598 silly cache add   rawSpec: '^1.0.1',
+598 silly cache add   spec: '>=1.0.1 <2.0.0',
+598 silly cache add   type: 'range' }
+599 silly addNamed js-tokens@>=1.0.1 <2.0.0
+600 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for js-tokens
+601 silly addNameRange { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: false }
+602 silly mapToRegistry name js-tokens
+603 silly mapToRegistry using default registry
+604 silly mapToRegistry registry https://registry.npmjs.org/
+605 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+606 verbose addNameRange registry:https://registry.npmjs.org/js-tokens already in flight; waiting
+607 http 304 https://registry.npmjs.org/js-tokens
+608 silly get cb [ 304,
+608 silly get   { date: 'Wed, 11 Nov 2015 14:24:33 GMT',
+608 silly get     via: '1.1 varnish',
+608 silly get     'cache-control': 'max-age=60',
+608 silly get     etag: '"F4N7TBLBJ8Z40VG7DPO546R7U"',
+608 silly get     age: '35',
+608 silly get     connection: 'keep-alive',
+608 silly get     'x-served-by': 'cache-atl6235-ATL',
+608 silly get     'x-cache': 'HIT',
+608 silly get     'x-cache-hits': '1',
+608 silly get     'x-timer': 'S1447251873.653787,VS0,VE0',
+608 silly get     vary: 'Accept' } ]
+609 verbose etag https://registry.npmjs.org/js-tokens from cache
+610 verbose get saving js-tokens to C:\Users\jbrown20\AppData\Roaming\npm-cache\registry.npmjs.org\js-tokens\.cache.json
+611 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+612 silly addNameRange versions [ 'js-tokens',
+612 silly addNameRange   [ '0.1.0',
+612 silly addNameRange     '0.2.0',
+612 silly addNameRange     '0.3.0',
+612 silly addNameRange     '0.3.1',
+612 silly addNameRange     '0.4.0',
+612 silly addNameRange     '0.4.1',
+612 silly addNameRange     '1.0.0',
+612 silly addNameRange     '1.0.1',
+612 silly addNameRange     '1.0.2' ] ]
+613 silly addNamed js-tokens@1.0.2
+614 verbose addNamed "1.0.2" is a plain semver version for js-tokens
+615 silly addNameRange number 2 { name: 'js-tokens', range: '>=1.0.1 <2.0.0', hasData: true }
+616 silly addNameRange versions [ 'js-tokens',
+616 silly addNameRange   [ '0.1.0',
+616 silly addNameRange     '0.2.0',
+616 silly addNameRange     '0.3.0',
+616 silly addNameRange     '0.3.1',
+616 silly addNameRange     '0.4.0',
+616 silly addNameRange     '0.4.1',
+616 silly addNameRange     '1.0.0',
+616 silly addNameRange     '1.0.1',
+616 silly addNameRange     '1.0.2' ] ]
+617 silly addNamed js-tokens@1.0.2
+618 verbose addNamed "1.0.2" is a plain semver version for js-tokens
+619 silly cache afterAdd js-tokens@1.0.2
+620 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\js-tokens\1.0.2\package\package.json not in flight; writing
+621 silly cache afterAdd js-tokens@1.0.2
+622 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\js-tokens\1.0.2\package\package.json already in flight; not writing
+623 verbose afterAdd C:\Users\jbrown20\AppData\Roaming\npm-cache\js-tokens\1.0.2\package\package.json written
+624 silly install resolved [ { name: 'js-tokens',
+624 silly install resolved     version: '1.0.2',
+624 silly install resolved     author: { name: 'Simon Lydell' },
+624 silly install resolved     license: 'MIT',
+624 silly install resolved     description: 'A regex that tokenizes JavaScript.',
+624 silly install resolved     keywords: [ 'JavaScript', 'js', 'token', 'tokenize', 'regex' ],
+624 silly install resolved     files: [ 'index.js' ],
+624 silly install resolved     repository:
+624 silly install resolved      { type: 'git',
+624 silly install resolved        url: 'git+https://github.com/lydell/js-tokens.git' },
+624 silly install resolved     scripts:
+624 silly install resolved      { test: 'mocha --ui tdd',
+624 silly install resolved        'esprima-compare': 'node esprima-compare ./index.js everything.js/es5.js',
+624 silly install resolved        build: 'node generate-index.js',
+624 silly install resolved        dev: 'npm run build && npm test' },
+624 silly install resolved     devDependencies:
+624 silly install resolved      { 'coffee-script': '~1.9.3',
+624 silly install resolved        esprima: '^2.3.0',
+624 silly install resolved        'everything.js': '^1.0.3',
+624 silly install resolved        mocha: '^2.2.5' },
+624 silly install resolved     gitHead: '90f0f0a217984625180414763234c923aeee4af5',
+624 silly install resolved     bugs: { url: 'https://github.com/lydell/js-tokens/issues' },
+624 silly install resolved     homepage: 'https://github.com/lydell/js-tokens#readme',
+624 silly install resolved     _id: 'js-tokens@1.0.2',
+624 silly install resolved     _shasum: '8647f7e13f64ac15d9357a59a346c804d53b3efe',
+624 silly install resolved     _from: 'js-tokens@>=1.0.1 <2.0.0',
+624 silly install resolved     _npmVersion: '2.14.7',
+624 silly install resolved     _nodeVersion: '4.2.1',
+624 silly install resolved     _npmUser: { name: 'lydell', email: 'simon.lydell@gmail.com' },
+624 silly install resolved     dist:
+624 silly install resolved      { shasum: '8647f7e13f64ac15d9357a59a346c804d53b3efe',
+624 silly install resolved        tarball: 'http://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz' },
+624 silly install resolved     maintainers: [ [Object] ],
+624 silly install resolved     directories: {},
+624 silly install resolved     _resolved: 'https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz',
+624 silly install resolved     readme: 'ERROR: No README data found!' } ]
+625 info install js-tokens@1.0.2 into C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+626 info installOne js-tokens@1.0.2
+627 verbose installOne of js-tokens to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify not in flight; installing
+628 silly install resolved [ { name: 'js-tokens',
+628 silly install resolved     version: '1.0.2',
+628 silly install resolved     author: { name: 'Simon Lydell' },
+628 silly install resolved     license: 'MIT',
+628 silly install resolved     description: 'A regex that tokenizes JavaScript.',
+628 silly install resolved     keywords: [ 'JavaScript', 'js', 'token', 'tokenize', 'regex' ],
+628 silly install resolved     files: [ 'index.js' ],
+628 silly install resolved     repository:
+628 silly install resolved      { type: 'git',
+628 silly install resolved        url: 'git+https://github.com/lydell/js-tokens.git' },
+628 silly install resolved     scripts:
+628 silly install resolved      { test: 'mocha --ui tdd',
+628 silly install resolved        'esprima-compare': 'node esprima-compare ./index.js everything.js/es5.js',
+628 silly install resolved        build: 'node generate-index.js',
+628 silly install resolved        dev: 'npm run build && npm test' },
+628 silly install resolved     devDependencies:
+628 silly install resolved      { 'coffee-script': '~1.9.3',
+628 silly install resolved        esprima: '^2.3.0',
+628 silly install resolved        'everything.js': '^1.0.3',
+628 silly install resolved        mocha: '^2.2.5' },
+628 silly install resolved     gitHead: '90f0f0a217984625180414763234c923aeee4af5',
+628 silly install resolved     bugs: { url: 'https://github.com/lydell/js-tokens/issues' },
+628 silly install resolved     homepage: 'https://github.com/lydell/js-tokens#readme',
+628 silly install resolved     _id: 'js-tokens@1.0.2',
+628 silly install resolved     _shasum: '8647f7e13f64ac15d9357a59a346c804d53b3efe',
+628 silly install resolved     _from: 'js-tokens@>=1.0.1 <2.0.0',
+628 silly install resolved     _npmVersion: '2.14.7',
+628 silly install resolved     _nodeVersion: '4.2.1',
+628 silly install resolved     _npmUser: { name: 'lydell', email: 'simon.lydell@gmail.com' },
+628 silly install resolved     dist:
+628 silly install resolved      { shasum: '8647f7e13f64ac15d9357a59a346c804d53b3efe',
+628 silly install resolved        tarball: 'http://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz' },
+628 silly install resolved     maintainers: [ [Object] ],
+628 silly install resolved     directories: {},
+628 silly install resolved     _resolved: 'https://registry.npmjs.org/js-tokens/-/js-tokens-1.0.2.tgz',
+628 silly install resolved     readme: 'ERROR: No README data found!' } ]
+629 info install js-tokens@1.0.2 into C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+630 info installOne js-tokens@1.0.2
+631 verbose installOne of js-tokens to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify not in flight; installing
+632 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\js-tokens-abfefa99edf60a93.lock for C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+633 verbose lock using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\js-tokens-d4194f16e49850df.lock for C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+634 silly install write writing js-tokens 1.0.2 to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+635 silly install write writing js-tokens 1.0.2 to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+636 verbose unbuild node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+637 verbose unbuild node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+638 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens is being purged from base C:\React\EAI
+639 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+640 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens is being purged from base C:\React\EAI
+641 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+642 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\js-tokens\1.0.2\package.tgz
+643 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+644 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens is being purged
+645 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+646 verbose tar unpack C:\Users\jbrown20\AppData\Roaming\npm-cache\js-tokens\1.0.2\package.tgz
+647 verbose tar unpacking to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+648 silly gentlyRm C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens is being purged
+649 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+650 silly gunzTarPerm modes [ '777', '666' ]
+651 silly gunzTarPerm modes [ '777', '666' ]
+652 silly gunzTarPerm extractEntry package.json
+653 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+654 silly gunzTarPerm extractEntry package.json
+655 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+656 silly gunzTarPerm extractEntry LICENSE
+657 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+658 silly gunzTarPerm extractEntry index.js
+659 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+660 silly gunzTarPerm extractEntry LICENSE
+661 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+662 silly gunzTarPerm extractEntry index.js
+663 silly gunzTarPerm modified mode [ 'index.js', 436, 438 ]
+664 silly gunzTarPerm extractEntry changelog.md
+665 silly gunzTarPerm modified mode [ 'changelog.md', 436, 438 ]
+666 silly gunzTarPerm extractEntry readme.md
+667 silly gunzTarPerm modified mode [ 'readme.md', 436, 438 ]
+668 silly gunzTarPerm extractEntry changelog.md
+669 silly gunzTarPerm modified mode [ 'changelog.md', 436, 438 ]
+670 silly gunzTarPerm extractEntry readme.md
+671 silly gunzTarPerm modified mode [ 'readme.md', 436, 438 ]
+672 verbose write writing to C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens\package.json
+673 verbose write writing to C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens\package.json
+674 info preinstall js-tokens@1.0.2
+675 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens\package.json
+676 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens\package.json
+677 silly install resolved []
+678 verbose about to build C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+679 info build C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+680 info linkStuff js-tokens@1.0.2
+681 silly linkStuff js-tokens@1.0.2 has C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules as its parent node_modules
+682 verbose linkBins js-tokens@1.0.2
+683 verbose linkMans js-tokens@1.0.2
+684 verbose rebuildBundles js-tokens@1.0.2
+685 info preinstall js-tokens@1.0.2
+686 info install js-tokens@1.0.2
+687 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens\package.json
+688 info postinstall js-tokens@1.0.2
+689 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\js-tokens-d4194f16e49850df.lock for C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify\node_modules\js-tokens
+690 verbose about to build C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+691 info build C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+692 verbose readDependencies loading dependencies from C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens\package.json
+693 info linkStuff loose-envify@1.1.0
+694 silly linkStuff loose-envify@1.1.0 has C:\React\EAI\node_modules\history\node_modules\warning\node_modules as its parent node_modules
+695 silly install resolved []
+696 verbose about to build C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+697 info build C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+698 info linkStuff js-tokens@1.0.2
+699 silly linkStuff js-tokens@1.0.2 has C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules as its parent node_modules
+700 verbose linkBins loose-envify@1.1.0
+701 verbose linkMans loose-envify@1.1.0
+702 verbose rebuildBundles loose-envify@1.1.0
+703 verbose rebuildBundles [ 'js-tokens' ]
+704 info install loose-envify@1.1.0
+705 info postinstall loose-envify@1.1.0
+706 verbose linkBins js-tokens@1.0.2
+707 verbose linkMans js-tokens@1.0.2
+708 verbose rebuildBundles js-tokens@1.0.2
+709 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\loose-envify-684e048d7868f780.lock for C:\React\EAI\node_modules\history\node_modules\warning\node_modules\loose-envify
+710 verbose about to build C:\React\EAI\node_modules\history\node_modules\warning
+711 info build C:\React\EAI\node_modules\history\node_modules\warning
+712 info install js-tokens@1.0.2
+713 info postinstall js-tokens@1.0.2
+714 info linkStuff warning@2.1.0
+715 silly linkStuff warning@2.1.0 has C:\React\EAI\node_modules\history\node_modules as its parent node_modules
+716 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\js-tokens-abfefa99edf60a93.lock for C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify\node_modules\js-tokens
+717 verbose about to build C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+718 info build C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+719 info linkStuff loose-envify@1.1.0
+720 silly linkStuff loose-envify@1.1.0 has C:\React\EAI\node_modules\history\node_modules\invariant\node_modules as its parent node_modules
+721 verbose linkBins warning@2.1.0
+722 verbose linkMans warning@2.1.0
+723 verbose rebuildBundles warning@2.1.0
+724 verbose rebuildBundles [ 'loose-envify' ]
+725 info install warning@2.1.0
+726 info postinstall warning@2.1.0
+727 verbose linkBins loose-envify@1.1.0
+728 verbose linkMans loose-envify@1.1.0
+729 verbose rebuildBundles loose-envify@1.1.0
+730 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\warning-9cd854b019676b2c.lock for C:\React\EAI\node_modules\history\node_modules\warning
+731 verbose rebuildBundles [ 'js-tokens' ]
+732 info install loose-envify@1.1.0
+733 info postinstall loose-envify@1.1.0
+734 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\loose-envify-e7734a7603b576e0.lock for C:\React\EAI\node_modules\history\node_modules\invariant\node_modules\loose-envify
+735 verbose about to build C:\React\EAI\node_modules\history\node_modules\invariant
+736 info build C:\React\EAI\node_modules\history\node_modules\invariant
+737 info linkStuff invariant@2.1.2
+738 silly linkStuff invariant@2.1.2 has C:\React\EAI\node_modules\history\node_modules as its parent node_modules
+739 verbose linkBins invariant@2.1.2
+740 verbose linkMans invariant@2.1.2
+741 verbose rebuildBundles invariant@2.1.2
+742 verbose rebuildBundles [ 'loose-envify' ]
+743 info install invariant@2.1.2
+744 info postinstall invariant@2.1.2
+745 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\invariant-ff736b636e998420.lock for C:\React\EAI\node_modules\history\node_modules\invariant
+746 verbose about to build C:\React\EAI\node_modules\history
+747 info build C:\React\EAI\node_modules\history
+748 info linkStuff history@1.13.0
+749 silly linkStuff history@1.13.0 has C:\React\EAI\node_modules as its parent node_modules
+750 verbose linkBins history@1.13.0
+751 verbose linkMans history@1.13.0
+752 verbose rebuildBundles history@1.13.0
+753 verbose rebuildBundles [ 'deep-equal', 'invariant', 'qs', 'warning' ]
+754 info install history@1.13.0
+755 info postinstall history@1.13.0
+756 verbose unsafe-perm in lifecycle true
+757 info history@1.13.0 Failed to exec postinstall script
+758 verbose unlock done using C:\Users\jbrown20\AppData\Roaming\npm-cache\_locks\history-73c2ce97e66eb56c.lock for C:\React\EAI\node_modules\history
+759 verbose stack Error: history@1.13.0 postinstall: `node ./npm-scripts/postinstall.js`
+759 verbose stack Exit status 1
+759 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:213:16)
+759 verbose stack     at EventEmitter.emit (events.js:110:17)
+759 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+759 verbose stack     at ChildProcess.emit (events.js:110:17)
+759 verbose stack     at maybeClose (child_process.js:1015:16)
+759 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+760 verbose pkgid history@1.13.0
+761 verbose cwd C:\React\EAI
+762 error Windows_NT 6.1.7601
+763 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "history"
+764 error node v0.12.6
+765 error npm  v2.11.2
+766 error code ELIFECYCLE
+767 error history@1.13.0 postinstall: `node ./npm-scripts/postinstall.js`
+767 error Exit status 1
+768 error Failed at the history@1.13.0 postinstall script 'node ./npm-scripts/postinstall.js'.
+768 error This is most likely a problem with the history package,
+768 error not with npm itself.
+768 error Tell the author that this fails on your system:
+768 error     node ./npm-scripts/postinstall.js
+768 error You can get their info via:
+768 error     npm owner ls history
+768 error There is likely additional logging output above.
+769 verbose exit [ 1, true ]
+770 verbose unbuild node_modules\history
+771 info preuninstall history@1.13.0
+772 info uninstall history@1.13.0
+773 verbose unbuild rmStuff history@1.13.0 from C:\React\EAI\node_modules
+774 info postuninstall history@1.13.0
+775 silly gentlyRm C:\React\EAI\node_modules\history is being purged from base C:\React\EAI
+776 verbose gentlyRm don't care about contents; nuking C:\React\EAI\node_modules\history
+777 silly vacuum-fs purging C:\React\EAI\node_modules\history
+778 silly vacuum-fs quitting because other entries in C:\React\EAI\node_modules
