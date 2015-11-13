@@ -12,13 +12,16 @@ module.exports = React.createClass({
     return (
       <Navbar fixedTop={true}>
         <NavBrand><a href="#"><img src='/metlifeLogo.png' /></a></NavBrand>
+        <Nav>
+          <NavItem className='red'>Delinquent</NavItem>
+          <NavItem className='amber'>Upcoming</NavItem>
+          <NavItem className='green'>Future Item</NavItem>
+        </Nav>
         <Nav right={true}>
-          <NavItem eventKey={1} href="#">Link</NavItem>
-          <NavItem eventKey={2} href="#">Link</NavItem>
-          <NavDropdown  eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-            <MenuItem eventKey="1">Action</MenuItem>
-            <MenuItem eventKey="2">Another action</MenuItem>
-            <MenuItem eventKey="3">Something else here</MenuItem>
+          <NavDropdown  eventKey={3} title="Email" id="basic-nav-dropdown">
+            <MenuItem eventKey="1">Email Selected</MenuItem>
+            <MenuItem eventKey="2">Email By Train</MenuItem>
+            <MenuItem eventKey="3">Email By Date</MenuItem>
             <MenuItem divider />
             <MenuItem eventKey="4">Separated link</MenuItem>
           </NavDropdown>
