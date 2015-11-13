@@ -1,22 +1,29 @@
 var React = require('react');
+var Nav = require( 'react-bootstrap/lib/Nav' );
+var NavBrand = require('react-bootstrap/lib/NavBrand' );
+var NavItem = require( 'react-bootstrap/lib/NavItem' );
+var Navbar = require( 'react-bootstrap/lib/Navbar' );
+var NavDropdown = require('react-bootstrap/lib/NavDropdown' );
+var DropdownButton = require( 'react-bootstrap/lib/DropdownButton' );
+var MenuItem = require( 'react-bootstrap/lib/MenuItem' );
 
 module.exports = React.createClass({
   render:function(){
     return (
-      <nav className="navbar navbar-default navbar-fixed-top">
-        <div className="container-fluid">
-          <div className="navbar-header">
-            <a className="navbar-brand" href="#"><img src='/metlifeLogoTrans.png' /></a>
-          </div>
-          <div>
-            <ul className="nav navbar-nav">
-              <li className='red'><a>Delinquent</a></li>
-              <li className='amber'><a>Coming Due</a></li>
-              <li className='green'><a>Future Items</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar fixedTop={true}>
+        <NavBrand><a href="#"><img src='/metlifeLogo.png' /></a></NavBrand>
+        <Nav right={true}>
+          <NavItem eventKey={1} href="#">Link</NavItem>
+          <NavItem eventKey={2} href="#">Link</NavItem>
+          <NavDropdown  eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+            <MenuItem eventKey="1">Action</MenuItem>
+            <MenuItem eventKey="2">Another action</MenuItem>
+            <MenuItem eventKey="3">Something else here</MenuItem>
+            <MenuItem divider />
+            <MenuItem eventKey="4">Separated link</MenuItem>
+          </NavDropdown>
+        </Nav>
+      </Navbar>
     )
   }
 });
