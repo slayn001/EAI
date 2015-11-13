@@ -1,8 +1,9 @@
 var express = require('express');
 var app = new express();
 var parser = require('body-parser');
-var React = require('react/addons');
+var React = require('react');
 var Item = require('./models/Item.js');
+var ReactDOMServer = require('react-dom/server');
 
 require('babel/register');
 require('./database.js');
@@ -12,7 +13,7 @@ app.get('/',function(req, res){
   var application = React.createFactory(require('./../app/components/ItemList.jsx'));
 
   Item.find(function(err, doc){
-    var generated = React.renderToString(application({
+    var generated = ReactDOMServer.renderToString(application({
       items:doc
       }));
 

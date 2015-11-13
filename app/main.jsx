@@ -1,6 +1,6 @@
 console.log('Hello from JSX');
 
-var React = require('react/addons');
+var React = require('react');
 var ItemList = require('./components/ItemList.jsx');
 var ItemStore = require('./stores/ItemStore.jsx');
 

@@ -1,4 +1,4 @@
-var React = require('react/addons');
+var React = require('react');
 var action = require('./../actions/ItemActionCreator.jsx');
 var Item = require('./Item.jsx');
 var ListNav = require('./ListNav.jsx');
