@@ -1,0 +1,158 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Nav",
+				"NavDropdown"
+			],
+			[
+				"L",
+				"ListNav"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/React/EAI/app/components/ListNav.jsx",
+		"/C/React/EAI/.gitignore",
+		"/C/React/EAI/app/components/ItemList.jsx",
+		"/C/React/EAI/gulpfile.js",
+		"/C/React/EAI/app/index.ejs",
+		"/C/React/EAI/app/main.jsx",
+		"/C/React/EAI/.tmp/metlifeLogo.png",
+		"/C/React/EAI/.tmp/bootstrap.css",
+		"/C/React/EAI/node_modules/bootstrap/dist/js/bootstrap.min.js",
+		"/C/React/EAI/.tmp/metlifeLogoTrans.png",
+		"/C/Users/jbrown20/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/React/EAI/app/dispatcher.js",
+		"/C/Users/jbrown20/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/React/EAI/server/main.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true
+}
