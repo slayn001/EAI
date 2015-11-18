@@ -60,19 +60,22 @@ getInitialState: function(){
         <div className='one columns'>
           <span>{this.props.item.eai}</span>
         </div>
-        <div className='two columns' title={this.props.item.managerEmail}>
+        <div className='one columns' title={this.props.item.managerEmail}>
           {this.props.item.projectManager}
         </div>
-        <div className='one columns' title={this.props.item.appName}>
+        <div className='one columns' title={this.props.item.appName} style={{marginLeft:6+'%'}}>
           {this.props.item.appName.substring(0,5)}
         </div>
-        <div className='two columns'>
+        <div className='one columns' style={{marginLeft:2+'%'}}>
+          jbrown20@metlife.com 
+        </div>       
+        <div className='two columns' style={{marginLeft:6+'%'}}>
           {this.props.item.server}
-        </div>
+        </div>        
         <div className='one columns'>
           {this.props.item.cell}
         </div>
-        <div className='one columns'>
+        <div className='one columns' style={{marginLeft:2+'%'}}>
           &nbsp;
         </div>
         <div className='one columns'>
