@@ -39,11 +39,11 @@ mongoose.connect('mongodb://localhost/eai', function(){
 		if (a.cell === b.cell)
 			return 0;	
 	})
-  
+  	var first;
 	items.forEach(function(e){
-		if ( e.cell != tmp)
+		if ( e.cell != first)
 			e.cellOwner = true;
-		tmp = e.cell;
+		first = e.cell;
 	});
 
 	items.forEach(function(item){
