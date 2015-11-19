@@ -27,6 +27,22 @@ module.exports = React.createClass({
   ,emailAll: function(e){
     action.email(this.props.items);
   }
+  ,emailTrain: function(train){
+    var lst = [];
+    this.props.items.forEach(function(e){
+      if (e.train === train)
+        lst.push(e);
+    })
+    action.email(lst);
+  }
+  ,emailDate: function(date){
+    var lst = [];
+    this.props.items.forEach(function(e){
+      if ( e.tgtConvDate === date)
+        lst.push(e);
+    })
+    action.email(lst);
+  }
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
