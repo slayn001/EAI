@@ -17,6 +17,7 @@ module.exports = React.createClass({
           <NavItem className='red'>Delinquent</NavItem>
           <NavItem className='amber'>Upcoming</NavItem>
           <NavItem className='green'>Future Item</NavItem>
+          <NavItem className='blue'>Cell Owner</NavItem>
         </Nav>
         <Nav right={true}>
           <NavDropdown  eventKey={3} title="Email" id="basic-nav-dropdown">
