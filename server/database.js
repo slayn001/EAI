@@ -26,15 +26,29 @@ mongoose.connect('mongodb://localhost/eai', function(){
 {"tgtConvDate":"11/31/2015","train":4,"environment":"DEV","appWing":"Wing 5","webWing":"Wing 5","cell":"webservices6DEV","wasVersion":"6.1.0.29","type":"Web","server":"AXSCGPAR0076","appServerName ":"AXSCGPAR0076","appName":"CDFWS - Case Definition Facility Web Services ","shortAppName":"  CDFFA","eai":1044,"projectManager":"Yerkola,Sunil","managerEmail":"syerkola@mailinator.net","masterAppName":"Case Definition Facility (CDF)","envSignOff":false,"guideSignOff":false,"cellOwner":false},
 {"tgtConvDate":"11/31/2015","train":4,"environment":"DEV","appWing":"Wing 5","webWing":"Wing 5","cell":"webservices6DEV","wasVersion":"6.1.0.29","type":"Web","server":"AXSCGPAR0076","appServerName ":"AXSCGPAR0076","appName":"CDFWS - Case Definition Facility Web Services ","shortAppName":"  CDFPlan","eai":1045,"projectManager":"Yerkola,Sunil","managerEmail":"syerkola@mailinator.net","masterAppName":"Case Definition Facility (CDF)","envSignOff":false,"guideSignOff":false,"cellOwner":false}];
 
-  items.forEach(function(e){
+	items.forEach(function(e){
+	  e.cell = e.cell.toUpperCase();
+	})
+
+
+	items.sort(function(a,b){
+		if (a.cell > b.cell)
+			return 1;
+		if (a.cell < b.cell)
+			return -1;
+		if (a.cell === b.cell)
+			return 0;	
+	})
+  
+	items.forEach(function(e){
 		if ( e.cell != tmp)
 			e.cellOwner = true;
 		tmp = e.cell;
 	});
 
-  items.forEach(function(item){
-    //console.log(  new Item(item));
-    new Item(item).save();
-  });
-  
+	items.forEach(function(item){
+	//console.log(  new Item(item));
+		new Item(item).save();
+ 	});
+
 });
