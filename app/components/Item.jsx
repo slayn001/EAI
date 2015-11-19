@@ -7,7 +7,8 @@ module.exports = React.createClass({
 getInitialState: function(){
   return {
     selected: this.props.selected || false
-    ,color: this.props.color
+    ,trainColor: this.props.trainColor
+    ,cellColor: this.props.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
   }
@@ -45,8 +46,8 @@ getInitialState: function(){
 }
 ,render: function(){
 
-    var trainClasses = classNames('one', 'columns', this.state.color);
-
+    var trainClasses = classNames('one', 'columns', this.state.trainColor);
+    var cellClasses = classNames('one', 'columns', this.state.cellColor);
     return (
       <div className='item row'>
         <a href='#' onClick={this.selectItem}>
@@ -57,7 +58,7 @@ getInitialState: function(){
         <div className='one columns'>
           {this.props.item.tgtConvDate}
         </div>
-        <div className='one columns'>
+        <div className={cellClasses}>
           <span>{this.props.item.eai}</span>
         </div>
         <div className='one columns' title={this.props.item.managerEmail}>
