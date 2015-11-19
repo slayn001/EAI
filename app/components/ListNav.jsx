@@ -69,7 +69,7 @@ module.exports = React.createClass({
             <h4> {this.state.header} </h4>
           </div>
           <div className='modal-body'>
-            {this.state.prompt} 
+            {this.state.prompt} <input type='text' id='input' />
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
