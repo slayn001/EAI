@@ -16,6 +16,7 @@ var ItemSchema = {
   ,tgtConvDate: String
   ,envSignOffDate: String
   ,guideSignOffDate: String
+  ,cellOwner: Boolean
 };
 
 var Item = mongoose.model('Item',ItemSchema, "Items");
