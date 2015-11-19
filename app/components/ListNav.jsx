@@ -10,7 +10,8 @@ var Modal = require('react-modal/lib/index');
 
 module.exports = React.createClass({
   getInitialState: function(){
-     return {modalIsOpen: false};
+
+     return {modalIsOpen: false, items: this.props.items};
   }
   ,openModal: function(header,prompt){
     this.setState({modalIsOpen: true, header:header, prompt: prompt});
@@ -36,7 +37,7 @@ module.exports = React.createClass({
       this.openModal('date', 'please enter the date you want to email');
     }
     else if (selectedKey === '5'){
-      console.log('5');
+      console.log(this.props.items);
     }
   }
   
