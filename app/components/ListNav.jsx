@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDom = require('react-dom');
 var Nav = require( 'react-bootstrap/lib/Nav' );
 var NavBrand = require('react-bootstrap/lib/NavBrand' );
 var NavItem = require( 'react-bootstrap/lib/NavItem' );
@@ -7,6 +8,7 @@ var NavDropdown = require('react-bootstrap/lib/NavDropdown' );
 var DropdownButton = require( 'react-bootstrap/lib/DropdownButton' );
 var MenuItem = require( 'react-bootstrap/lib/MenuItem' );
 var Modal = require('react-modal/lib/index');
+var action = require('./../actions/ItemActionCreator.jsx');
 
 module.exports = React.createClass({
   getInitialState: function(){
@@ -22,7 +24,9 @@ module.exports = React.createClass({
   ,handleModalCloseRequest(){
     this.closeModal();
   }
-
+  ,emailAll: function(e){
+    action.email(this.props.items);
+  }
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
@@ -38,6 +42,7 @@ module.exports = React.createClass({
     }
     else if (selectedKey === '5'){
       console.log(this.props.items);
+      this.emailAll();
     }
   }
   
