@@ -9,7 +9,25 @@ var MenuItem = require( 'react-bootstrap/lib/MenuItem' );
 
 module.exports = React.createClass({
   
-  render:function(){
+  handleSelect: function(event, selectedKey){
+    event.preventDefault();
+    console.log('you selected ' + selectedKey);
+    
+    if (selectedKey === '2'){
+      console.log('2');
+    }
+    else if (selectedKey === '3'){
+      console.log('3');
+    }
+    else if (selectedKey === '4'){
+      console.log('4');
+    }
+    else if (selectedKey === '5'){
+      console.log('5');
+    }
+  }
+  
+  ,render:function(){
     return (
       <Navbar fixedTop={true}>
         <NavBrand><a href="#"><img src='/metlifeLogo.png' /></a></NavBrand>
@@ -19,13 +37,13 @@ module.exports = React.createClass({
           <NavItem className='green'>Future Item</NavItem>
           <NavItem className='blue'>Cell Owner</NavItem>
         </Nav>
-        <Nav right={true}>
-          <NavDropdown  eventKey={3} title="Email" id="basic-nav-dropdown">
-            <MenuItem eventKey="1">Email Selected</MenuItem>
-            <MenuItem eventKey="2">Email By Train</MenuItem>
-            <MenuItem eventKey="3">Email By Date</MenuItem>
+        <Nav right={true} onSelect={this.handleSelect}>
+          <NavDropdown title="Email" id="basic-nav-dropdown">
+            <MenuItem eventKey="2">Email Selected</MenuItem>
+            <MenuItem eventKey="3">Email By Train</MenuItem>
+            <MenuItem eventKey="4">Email By Date</MenuItem>
             <MenuItem divider />
-            <MenuItem eventKey="4">Separated link</MenuItem>
+            <MenuItem eventKey="5">Separated link</MenuItem>
           </NavDropdown>
         </Nav>
       </Navbar>
