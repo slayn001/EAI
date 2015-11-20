@@ -30,34 +30,17 @@ module.exports = React.createClass({
   ,emailAll: function(e){
     action.email(this.props.items);
   }
-  ,emailTrain: function(train){
-    var lst = [];
-    this.props.items.forEach(function(e){
-      if (e.train === train)
-        lst.push(e);
-    })
-    action.email(lst);
-  }
-  ,emailDate: function(date){
-    var lst = [];
-    this.props.items.forEach(function(e){
-      if ( e.tgtConvDate === date)
-        lst.push(e);
-    })
-    action.email(lst);
-  }
   ,handleChange: function(e){
     e.preventDefault();
     console.log(e.target.value);
     this.setState({mailInput: e.target.value})
   }
   ,sendEmail: function(){
-    var index = this.state.code;
-    console.log('code ' + index);
-    var input = this.state.mailInput;
-    console.log('input ' + input);
 
+    var index = this.state.code;
+    var input = this.state.mailInput;
     var lst = [];
+    
     this.props.items.forEach(function(e){
       console.log(e[index]);
       if ( e[index].toString() === input)
@@ -72,7 +55,8 @@ module.exports = React.createClass({
     console.log('you selected ' + selectedKey);
     
     if (selectedKey === '2'){
-      console.log('2');
+      this.setState({header: 'Email by Manager', prompt: 'Train Number', code:'train'})
+      this.openModal();
     }
     else if (selectedKey === '3'){
       this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train'})
@@ -101,7 +85,7 @@ module.exports = React.createClass({
 
         <Nav right={true} onSelect={this.handleSelect}>
           <NavDropdown title="Email" id="basic-nav-dropdown">
-            <MenuItem eventKey="2">Email Selected</MenuItem>
+            <MenuItem eventKey="2">Email By Manager</MenuItem>
             <MenuItem eventKey="3">Email By Train</MenuItem>
             <MenuItem eventKey="4">Email By Date</MenuItem>
             <MenuItem divider />
