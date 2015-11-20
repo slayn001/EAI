@@ -31,6 +31,9 @@ getInitialState: function(){
 
   action.setGuideSignOff(this.props.item);
 }
+,handleChange: function(e){
+  console.log(e.target.value);
+}
 ,selectItem: function(e){
   e.preventDefault();
   var selectedState = !this.state.selected;
@@ -68,7 +71,7 @@ getInitialState: function(){
           {this.props.item.appName.substring(0,5)}
         </div>
         <div className='one columns' style={{marginLeft:2+'%'}}>
-          jbrown20@metlife.com 
+          <input type='email'style={{width:170+'px'}} placeholder='jbrown20@metlife.com' onChange={this.handleChange}/>
         </div>       
         <div className='two columns' style={{marginLeft:6+'%'}}>
           {this.props.item.server}
