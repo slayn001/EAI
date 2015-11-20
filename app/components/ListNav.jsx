@@ -52,7 +52,7 @@ module.exports = React.createClass({
     console.log('you selected ' + selectedKey);
     
     if (selectedKey === '2'){
-      this.setState({header: 'Email by Manager', prompt: 'Train Number', code:'train'})
+      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'train'})
       this.openModal();
     }
     else if (selectedKey === '3'){
