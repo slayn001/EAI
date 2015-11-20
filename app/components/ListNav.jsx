@@ -12,7 +12,6 @@ var action = require('./../actions/ItemActionCreator.jsx');
 
 module.exports = React.createClass({
   getInitialState: function(){
-
      return {
       modalIsOpen: false
       ,items: this.props.items
@@ -32,7 +31,6 @@ module.exports = React.createClass({
   }
   ,handleChange: function(e){
     e.preventDefault();
-    console.log(e.target.value);
     this.setState({mailInput: e.target.value})
   }
   ,sendEmail: function(){
@@ -40,15 +38,14 @@ module.exports = React.createClass({
     var index = this.state.code;
     var input = this.state.mailInput;
     var lst = [];
-    
+
     this.props.items.forEach(function(e){
-      console.log(e[index]);
       if ( e[index].toString() === input)
         lst.push(e);
     })
-    console.log(lst);
-    //action.email(lst);
+    action.email(lst);
     this.closeModal();
+
   }
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
@@ -85,7 +82,7 @@ module.exports = React.createClass({
 
         <Nav right={true} onSelect={this.handleSelect}>
           <NavDropdown title="Email" id="basic-nav-dropdown">
-            <MenuItem eventKey="2">Email By Manager</MenuItem>
+            <MenuItem eventKey="2">Email By Email</MenuItem>
             <MenuItem eventKey="3">Email By Train</MenuItem>
             <MenuItem eventKey="4">Email By Date</MenuItem>
             <MenuItem divider />
