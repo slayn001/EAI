@@ -57,7 +57,7 @@ module.exports = React.createClass({
     return (
 
       <div>
-        <ListNav />
+        <ListNav items={this.props.items}/>
         <ListHeader />
 
         <div>
