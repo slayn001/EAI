@@ -82,9 +82,9 @@ module.exports = React.createClass({
 
         <Nav right={true} onSelect={this.handleSelect}>
           <NavDropdown title="Email" id="basic-nav-dropdown">
-            <MenuItem eventKey="2">Email By Email</MenuItem>
-            <MenuItem eventKey="3">Email By Train</MenuItem>
-            <MenuItem eventKey="4">Email By Date</MenuItem>
+            <MenuItem eventKey="2">By Email</MenuItem>
+            <MenuItem eventKey="3">By Train</MenuItem>
+            <MenuItem eventKey="4">By Date</MenuItem>
             <MenuItem divider />
             <MenuItem eventKey="5">Email All</MenuItem>
           </NavDropdown>
