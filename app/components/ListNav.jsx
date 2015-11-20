@@ -13,15 +13,18 @@ var action = require('./../actions/ItemActionCreator.jsx');
 module.exports = React.createClass({
   getInitialState: function(){
 
-     return {modalIsOpen: false, items: this.props.items};
+     return {
+      modalIsOpen: false
+      ,items: this.props.items
+    }
   }
   ,openModal: function(header,prompt){
-    this.setState({modalIsOpen: true, header:header, prompt: prompt});
+    this.setState({modalIsOpen: true});
   }
   ,closeModal: function(){
     this.setState({modalIsOpen: false});
   }
-  ,handleModalCloseRequest(){
+  ,handleModalCloseRequest: function(){
     this.closeModal();
   }
   ,emailAll: function(e){
@@ -43,6 +46,27 @@ module.exports = React.createClass({
     })
     action.email(lst);
   }
+  ,handleChange: function(e){
+    e.preventDefault();
+    console.log(e.target.value);
+    this.setState({mailInput: e.target.value})
+  }
+  ,sendEmail: function(){
+    var index = this.state.code;
+    console.log('code ' + index);
+    var input = this.state.mailInput;
+    console.log('input ' + input);
+
+    var lst = [];
+    this.props.items.forEach(function(e){
+      console.log(e[index]);
+      if ( e[index].toString() === input)
+        lst.push(e);
+    })
+    console.log(lst);
+    //action.email(lst);
+    this.closeModal();
+  }
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
@@ -51,13 +75,14 @@ module.exports = React.createClass({
       console.log('2');
     }
     else if (selectedKey === '3'){
-      this.openModal('train number', 'please enter the train you want to email');
+      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train'})
+      this.openModal();
     }
     else if (selectedKey === '4'){
-      this.openModal('date', 'please enter the date you want to email');
+      this.setState({header: 'Email by Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate'})
+      this.openModal();
     }
     else if (selectedKey === '5'){
-      console.log(this.props.items);
       this.emailAll();
     }
   }
@@ -91,11 +116,11 @@ module.exports = React.createClass({
             <h4> {this.state.header} </h4>
           </div>
           <div className='modal-body'>
-            {this.state.prompt} <input type='text' id='input' />
+            <input type='text' placeholder={this.state.prompt} id='input' onChange={this.handleChange}/>
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={this.handleSaveClicked}>Email</button>
+            <button type="button" className="btn btn-primary" onClick={this.sendEmail}>Email</button>
           </div>
         </div>
       </Modal>
