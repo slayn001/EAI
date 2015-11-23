@@ -7,6 +7,7 @@ var ItemSchema = {
   ,appName: String
   ,projectManager: String
   ,managerEmail:String
+  ,testerEmail:String
   ,server: String
   ,environment: String
   ,cell: String
