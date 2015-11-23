@@ -8,7 +8,6 @@ module.exports = React.createClass({
 getInitialState: function(){
   return {
     modalIsOpen: false
-    ,selected: this.props.selected || false
     ,trainColor: this.props.trainColor
     ,cellColor: this.props.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
@@ -26,59 +25,33 @@ getInitialState: function(){
   this.closeModal();
 }
 ,setEnvSignOff: function(e){
-  this.setState({
-    envButton: !this.state.envButton
-  }, function(){
-    console.log(this.state.envButton);
-  })
-
+  this.setState({ envButton: !this.state.envButton})
   action.setEnvSignOff(this.props.item);
 }
 ,setGuideSignOff: function(e){
-  this.setState({
-    guideButton: !this.state.guideButton
-  }, function(){
-    console.log(this.state.guideButton);
-  })
-
+  this.setState({ guideButton: !this.state.guideButton })
   action.setGuideSignOff(this.props.item);
 }
 ,handleChange: function(e){
-  console.log(e.target.value);
   this.setState({testerEmail:e.target.value})
 }
 ,updateTester: function(e){
-  console.log(this.props.item);
-  console.log(this.state.testerEmail);
+
   this.props.item.testerEmail = this.state.testerEmail;
-
   action.setTesterEmail(this.props.item);
-  this.closeModal();
-}
-,selectItem: function(e){
-  e.preventDefault();
-  var selectedState = !this.state.selected;
-  var color = selectedState ? 'blue' : this.props.color;
-  this.setState({
-    selected: selectedState
-    ,color: color
-  }, function(){
-    console.log(this.state.selected);
-  });
 
-  this.props.callbackParent(selectedState, this.props.itemIndex);
+  this.closeModal();
 }
 ,render: function(){
 
     var trainClasses = classNames('one', 'columns', this.state.trainColor);
     var cellClasses = classNames('one', 'columns', this.state.cellColor);
     return (
+
       <div className='item row'>
-        <a href='#' onClick={this.selectItem}>
         <div className={trainClasses}>
           {this.props.item.train}
         </div>
-      </a>
         <div className='one columns'>
           {this.props.item.tgtConvDate}
         </div>

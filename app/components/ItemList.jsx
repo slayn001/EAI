@@ -8,17 +8,9 @@ var _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
 module.exports = React.createClass({
   getInitialState:function(){
-
-    
     return {
       checked:false
-      
     }
-  }
-  ,onChildChanged: function(newState,i){
-    this.setState({checked:newState});
-    this.props.items[i].selected = newState;
-    console.log('you clicked: ' + this.props.items[i]._id);
   }
   ,convertFromStringToDate:function(date){
     var da = date.split('/');
@@ -41,18 +33,6 @@ module.exports = React.createClass({
       return 'green';
 
   }
-  ,emailSelected: function(e){
-    var lst = [];
-
-    this.props.items.forEach(function(item){
-      if ( item.selected){
-        lst.push(item);
-      }
-    });
-
-    console.log(lst);
-    action.email(lst);
-  }
   ,render: function(){
     return (
 
@@ -64,17 +44,12 @@ module.exports = React.createClass({
           {this.props.items.map(function(item, i){
 
             return(
-            <Item  eso={item.envSignOff} gso={item.guideSignOff} cellOwner={item.cellOwner} trainColor={this.returnColor(item)} callbackParent={this.onChildChanged} item={item} key={item._id} itemIndex={i}/>
+            <Item  eso={item.envSignOff} gso={item.guideSignOff} cellOwner={item.cellOwner} trainColor={this.returnColor(item)} item={item} key={item._id} itemIndex={i}/>
             )
           }, this).sort(function(a, b){
             return a.props.item.train-b.props.item.train;
           })}
         </div>
-
-        <div className = 'emailChecked'>
-            <button onClick={this.emailSelected}> Email Selected </button>
-        </div>
-
       </div>
     )
   }
