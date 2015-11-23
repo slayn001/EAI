@@ -14,10 +14,9 @@ module.exports = React.createClass({
   getInitialState: function(){
      return {
       modalIsOpen: false
-      ,items: this.props.items
     }
   }
-  ,openModal: function(header,prompt){
+  ,openModal: function(){
     this.setState({modalIsOpen: true});
   }
   ,closeModal: function(){
@@ -50,28 +49,27 @@ module.exports = React.createClass({
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
-    this.props.items.forEach(function(e){
-      console.log(e);
-    })
+    
     if (selectedKey === '2'){
       var lst = [];
       this.props.items.forEach(function(e){
         if ( lst.indexOf(e.testerEmail) < 0)
           lst.push(e.testerEmail);
       });
-      console.log(lst);
-      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'train'})
+      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'train', choices:lst})
       this.openModal();
     }
     else if (selectedKey === '3'){
       var lst = [];
+      
       this.props.items.forEach(function(e){
         if ( lst.indexOf(e.train) < 0)
           lst.push(e.train);
       });
-      console.log(lst);
-    
-      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train', choices:lst})
+      
+      this.setState({choices:lst});
+      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train'})
+      
       this.openModal();
     }
     else if (selectedKey === '4'){
@@ -80,16 +78,22 @@ module.exports = React.createClass({
         if ( lst.indexOf(e.tgtConvDate) < 0)
           lst.push(e.tgtConvDate);
       });
-      console.log(lst);
-      this.setState({header: 'Email by Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate'})
+      this.setState({header: 'Email by Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate', choices:lst})
+      
       this.openModal();
     }
     else if (selectedKey === '5'){
       this.emailAll();
+    }else if (selectedKey === '6'){
+      console.log(event.target.innerText);
+      this.setState({prompt:event.target.innerText});
     }
   }
   
   ,render:function(){
+
+    var lst = this.state.choices || [];
+
     return (
       <div>
       <Navbar fixedTop={true}>
@@ -118,7 +122,14 @@ module.exports = React.createClass({
             <h4> {this.state.header} </h4>
           </div>
           <div className='modal-body'>
-            <input type='text' placeholder={this.state.prompt} id='input' onChange={this.handleChange}/>
+            <NavDropdown title="Email" id="basic-nav-dropdown" onSelect={this.handleSelect}>
+              {lst.map(function(e, i){
+                return(
+                  <MenuItem eventKey="6"> {e} </MenuItem>
+                )
+              })}
+            </NavDropdown>
+            {this.state.prompt}
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
