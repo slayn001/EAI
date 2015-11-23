@@ -13,18 +13,6 @@ module.exports = {
       , type:'item:delete'
     });
   }
-  ,unPurchase: function(item){
-    dispatcher.dispatch({
-      payload: item
-      , type:'item:unPurchase'
-    });
-  }
-  ,purchase: function(item){
-    dispatcher.dispatch({
-      payload: item
-      , type:'item:purchase'
-    });
-  }
   ,setEnvSignOff: function(item){
     console.log(item);
     dispatcher.dispatch({
