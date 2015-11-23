@@ -86,7 +86,7 @@ module.exports = React.createClass({
       this.emailAll();
     }else if (selectedKey === '6'){
       console.log(event.target.innerText);
-      this.setState({prompt:event.target.innerText});
+      this.setState({prompt:event.target.innerText, mailInput:event.target.innerText});
     }
   }
   
