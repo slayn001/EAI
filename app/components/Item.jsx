@@ -1,17 +1,29 @@
 var React = require('react');
 var action = require('./../actions/ItemActionCreator.jsx');
+var Modal = require('react-modal/lib/index');
 var classNames = require('classnames');
 
 module.exports = React.createClass({
 
 getInitialState: function(){
   return {
-    selected: this.props.selected || false
+    modalIsOpen: false
+    ,selected: this.props.selected || false
     ,trainColor: this.props.trainColor
     ,cellColor: this.props.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
+    ,testerEmail: this.props.item.testerEmail
   }
+}
+,openModal: function(){
+  this.setState({modalIsOpen: true});
+}
+,closeModal: function(){
+  this.setState({modalIsOpen: false});
+}
+,handleModalCloseRequest: function(){
+  this.closeModal();
 }
 ,setEnvSignOff: function(e){
   this.setState({
@@ -30,6 +42,18 @@ getInitialState: function(){
   })
 
   action.setGuideSignOff(this.props.item);
+}
+,handleChange: function(e){
+  console.log(e.target.value);
+  this.setState({testerEmail:e.target.value})
+}
+,updateTester: function(e){
+  console.log(this.props.item);
+  console.log(this.state.testerEmail);
+  this.props.item.testerEmail = this.state.testerEmail;
+
+  action.setTesterEmail(this.props.item);
+  this.closeModal();
 }
 ,selectItem: function(e){
   e.preventDefault();
@@ -67,8 +91,8 @@ getInitialState: function(){
         <div className='one columns' title={this.props.item.appName} style={{marginLeft:6+'%'}}>
           {this.props.item.appName.substring(0,5)}
         </div>
-        <div className='one columns' style={{marginLeft:2+'%'}}>
-          jbrown20@metlife.com 
+        <div className='one columns' style={{marginLeft:2+'%'}} onClick={this.openModal}>
+          {this.props.item.testerEmail}
         </div>       
         <div className='two columns' style={{marginLeft:6+'%'}}>
           {this.props.item.server}
@@ -85,6 +109,21 @@ getInitialState: function(){
         <div className='one columns'>
           <button className='btn btn-primary' disabled={this.state.guideButton} onClick={this.setGuideSignOff}>{this.state.guideButton?'Done':'Sign'}</button>
         </div>
+
+        <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.modalIsOpen} onRequestClose={this.handleModalCloseRequest}>
+        <div className='modal-content'>
+          <div className='modal-header'>
+            <h4> Tester Email </h4>
+          </div>
+          <div className='modal-body'>
+            <input type='text' placeholder={this.props.item.testerEmail} id='input' onChange={this.handleChange}/>
+          </div>
+          <div className='modal-footer'>
+            <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
+            <button type="button" className="btn btn-primary" onClick={this.updateTester}>Email</button>
+          </div>
+        </div>
+      </Modal>
       </div>
     )
   }
