@@ -39,6 +39,13 @@ module.exports = {
       ,type:'item:setGuideSignOff'
     })
   }
+  ,setTesterEmail: function(item){
+    console.log(item);
+    dispatcher.dispatch({
+      payload: item
+      ,type:'item:setTesterEmail'
+    })
+  }
   ,email: function(data){
     dispatcher.dispatch({
       payload:data

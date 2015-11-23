@@ -13,9 +13,10 @@ getInitialState: function(){
     ,cellColor: this.props.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
+    ,testerEmail: this.props.item.testerEmail
   }
 }
-,openModal: function(header,prompt){
+,openModal: function(){
   this.setState({modalIsOpen: true});
 }
 ,closeModal: function(){
@@ -44,6 +45,15 @@ getInitialState: function(){
 }
 ,handleChange: function(e){
   console.log(e.target.value);
+  this.setState({testerEmail:e.target.value})
+}
+,updateTester: function(e){
+  console.log(this.props.item);
+  console.log(this.state.testerEmail);
+  this.props.item.testerEmail = this.state.testerEmail;
+
+  action.setTesterEmail(this.props.item);
+  this.closeModal();
 }
 ,selectItem: function(e){
   e.preventDefault();
@@ -110,7 +120,7 @@ getInitialState: function(){
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={this.closeModal}>Email</button>
+            <button type="button" className="btn btn-primary" onClick={this.updateTester}>Email</button>
           </div>
         </div>
       </Modal>

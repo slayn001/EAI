@@ -56,6 +56,11 @@ function ItemStore(){
     helper.patch('/api/items/' + item._id, item);
   }
 
+  function setTesterEmail(item){
+    triggerListeners();
+    helper.patch('/api/items/' + item._id, item);
+  }
+
   function email(lst){
     triggerListeners();
     helper.post('/api/email', lst);
@@ -81,6 +86,9 @@ function ItemStore(){
           break;
         case 'setGuideSignOff' :
           setGuideSignOff(event.payload, true);
+          break;
+        case 'setTesterEmail' :
+          setTesterEmail(event.payload);
           break;
         case 'email' :
           email(event.payload);

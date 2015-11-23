@@ -43,18 +43,3 @@ a img{
 .red {
   background-color: #ff2929
 }
-
-.search_field {
-    display: inline-block;
-    border: 1px inset #ccc;
-}
-
-.search_field input {
-    border: none;
-    padding: 0;
-}
-
-.search_field button {
-    border: none;
-    background: none;
-}
