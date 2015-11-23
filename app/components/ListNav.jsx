@@ -50,16 +50,37 @@ module.exports = React.createClass({
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
-    
+    this.props.items.forEach(function(e){
+      console.log(e);
+    })
     if (selectedKey === '2'){
+      var lst = [];
+      this.props.items.forEach(function(e){
+        if ( lst.indexOf(e.testerEmail) < 0)
+          lst.push(e.testerEmail);
+      });
+      console.log(lst);
       this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'train'})
       this.openModal();
     }
     else if (selectedKey === '3'){
-      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train'})
+      var lst = [];
+      this.props.items.forEach(function(e){
+        if ( lst.indexOf(e.train) < 0)
+          lst.push(e.train);
+      });
+      console.log(lst);
+    
+      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train', choices:lst})
       this.openModal();
     }
     else if (selectedKey === '4'){
+      var lst = [];
+      this.props.items.forEach(function(e){
+        if ( lst.indexOf(e.tgtConvDate) < 0)
+          lst.push(e.tgtConvDate);
+      });
+      console.log(lst);
       this.setState({header: 'Email by Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate'})
       this.openModal();
     }
