@@ -56,7 +56,7 @@ module.exports = React.createClass({
         if ( lst.indexOf(e.testerEmail) < 0)
           lst.push(e.testerEmail);
       });
-      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'train', choices:lst})
+      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'testerEmail', choices:lst})
       this.openModal();
     }
     else if (selectedKey === '3'){

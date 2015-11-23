@@ -20,7 +20,7 @@ module.exports = {
       var mailObj = {};
 
       mailObj.from = 'WAS Dev Migration  <wasdevmigration@metlife.com>';
-      mailObj.to = e.managerEmail;
+      mailObj.to = e.testerEmail;
       mailObj.subject = 'Self Service WebSphere Application Server Dev Handoff';
       mailObj.text = e.projectManager + '\nYour application ' + e.appName + ' is coming due for migration on ' + e.tgtConvDate + '\nPlease visit the following link \twww.google.com';
       mailObj.html = '<div><b>' + e.projectManager + '</b><div>Your application, '+ e.appName + ' is coming due for migration on ' + e.tgtConvDate + '</div><div>Please visit the following link <a href="www.google.com">Google</a></div></div>';
