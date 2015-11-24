@@ -4,7 +4,6 @@ module.exports = React.createClass({
   render: function(){
     return(
       <div className='heading row'>
-        <div className='one columns'> <b>Train</b></div>
         <div className='one columns'> <b>Target Date</b></div>
         <div className='one columns'> <b>EAI</b></div>
         <div className='one columns'> <b>Project Manager</b></div>

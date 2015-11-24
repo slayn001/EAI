@@ -32,14 +32,17 @@ a img{
   margin-top: -10px;
 }
 .blue {
-  background-color: #5ee6ed
+  color: #5ee6ed
 }
 .amber {
-  background-color: #FFCC00
+  color: #FFCC00;
+  font-weight: bold;
 }
 .green {
-  background-color: #66FF33
+  color: #66FF33;
+  font-weight: bold;
 }
 .red {
-  background-color: #ff2929
+  color: #ff2929;
+  font-weight: bold;
 }

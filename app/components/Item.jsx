@@ -50,9 +50,6 @@ getInitialState: function(){
 
       <div className='item row'>
         <div className={trainClasses}>
-          {this.props.item.train}
-        </div>
-        <div className='one columns'>
           {this.props.item.tgtConvDate}
         </div>
         <div className={cellClasses}>
