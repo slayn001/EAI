@@ -99,10 +99,10 @@ module.exports = React.createClass({
       <Navbar fixedTop={true}>
         <NavBrand><a href="#"><img src='/metlifeLogo.png' /></a></NavBrand>
         <Nav>
-          <NavItem className='red'>Delinquent</NavItem>
-          <NavItem className='amber'>Upcoming</NavItem>
-          <NavItem className='green'>Future Item</NavItem>
-          <NavItem className='blue'>Cell Owner</NavItem>
+          <NavItem className='redBack'>Delinquent</NavItem>
+          <NavItem className='amberBack'>Upcoming</NavItem>
+          <NavItem className='greenBack'>Future Item</NavItem>
+          <NavItem className='blueBack'>Cell Owner</NavItem>
         </Nav>
 
         <Nav right={true} onSelect={this.handleSelect}>
