@@ -8,6 +8,7 @@ module.exports = React.createClass({
 getInitialState: function(){
   return {
     modalIsOpen: false
+    ,dateModalIsOpen: false
     ,trainColor: this.props.trainColor
     ,cellColor: this.props.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
@@ -24,6 +25,15 @@ getInitialState: function(){
 ,handleModalCloseRequest: function(){
   this.closeModal();
 }
+,openDateModal: function(){
+  this.setState({dateModalIsOpen: true});
+}
+,closeDateModal: function(){
+  this.setState({dateModalIsOpen: false});
+}
+,handleDateModalCloseRequest: function(){
+  this.closeDateModal();
+}
 ,setEnvSignOff: function(e){
   this.setState({ envButton: !this.state.envButton})
   action.setEnvSignOff(this.props.item);
@@ -35,10 +45,19 @@ getInitialState: function(){
 ,handleChange: function(e){
   this.setState({testerEmail:e.target.value})
 }
+,handleDateChange: function(e){
+  this.setState({tgtConvDate:e.target.value})
+}
 ,updateTester: function(e){
 
   this.props.item.testerEmail = this.state.testerEmail;
   action.setTesterEmail(this.props.item);
+
+  this.closeModal();
+}
+,updateDate: function(e){
+  this.props.item.tgtConvDate = this.state.tgtConvDate;
+  action.setTgtConvDate(this.props.item);
 
   this.closeModal();
 }
@@ -49,7 +68,7 @@ getInitialState: function(){
     return (
 
       <div className='item row'>
-        <div className={trainClasses}>
+        <div className={trainClasses} onClick={this.openDateModal}>
           {this.props.item.tgtConvDate}
         </div>
         <div className={cellClasses}>
@@ -80,6 +99,7 @@ getInitialState: function(){
           <button className='btn btn-primary' disabled={this.state.guideButton} onClick={this.setGuideSignOff}>{this.state.guideButton?'Done':'Sign'}</button>
         </div>
 
+
         <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.modalIsOpen} onRequestClose={this.handleModalCloseRequest}>
         <div className='modal-content'>
           <div className='modal-header'>
@@ -90,10 +110,26 @@ getInitialState: function(){
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={this.updateTester}>Email</button>
+            <button type="button" className="btn btn-primary" onClick={this.updateTester}>Update</button>
           </div>
         </div>
       </Modal>
+
+      <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.dateModalIsOpen} onRequestClose={this.handleDateModalCloseRequest}>
+        <div className='modal-content'>
+          <div className='modal-header'>
+            <h4> Target Conversion Date </h4>
+          </div>
+          <div className='modal-body'>
+            <input type='text' placeholder={this.props.item.tgtConvDate} id='input' onChange={this.handleDateChange}/>
+          </div>
+          <div className='modal-footer'>
+            <button type="button" className="btn btn-default" onClick={this.handleDateModalCloseRequest}>Close</button>
+            <button type="button" className="btn btn-primary" onClick={this.updateDate}>Update</button>
+          </div>
+        </div>
+      </Modal>
+
       </div>
     )
   }

@@ -61,6 +61,11 @@ function ItemStore(){
     helper.patch('/api/items/' + item._id, item);
   }
 
+  function setTgtConvDate(item){
+    triggerListeners();
+    helper.patch('/api/items/' + item._id, item);
+  }
+
   function email(lst){
     triggerListeners();
     helper.post('/api/email', lst);
@@ -88,6 +93,9 @@ function ItemStore(){
           setGuideSignOff(event.payload, true);
           break;
         case 'setTesterEmail' :
+          setTesterEmail(event.payload);
+          break;
+        case 'setTgtConvDate' :
           setTesterEmail(event.payload);
           break;
         case 'email' :

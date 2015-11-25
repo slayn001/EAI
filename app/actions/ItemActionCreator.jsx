@@ -34,6 +34,13 @@ module.exports = {
       ,type:'item:setTesterEmail'
     })
   }
+  ,setTgtConvDate: function(item){
+    console.log(item);
+    dispatcher.dispatch({
+      payload: item
+      ,type:'item:setTgtConvDate'
+    })
+  }
   ,email: function(data){
     dispatcher.dispatch({
       payload:data
