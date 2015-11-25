@@ -70,7 +70,7 @@ getInitialState: function(){
         <div className='one columns'>
           {this.props.item.cell}
         </div>
-        <div className='one columns' style={{marginLeft:2+'%'}}>
+        <div className='one columns'>
           &nbsp;
         </div>
         <div className='one columns'>

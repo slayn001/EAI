@@ -59,19 +59,6 @@ module.exports = React.createClass({
       this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'testerEmail', choices:lst})
       this.openModal();
     }
-    else if (selectedKey === '3'){
-      var lst = [];
-      
-      this.props.items.forEach(function(e){
-        if ( lst.indexOf(e.train) < 0)
-          lst.push(e.train);
-      });
-      
-      this.setState({choices:lst});
-      this.setState({header: 'Email by Train Number', prompt: 'Train Number', code:'train'})
-      
-      this.openModal();
-    }
     else if (selectedKey === '4'){
       var lst = [];
       this.props.items.forEach(function(e){
@@ -108,7 +95,6 @@ module.exports = React.createClass({
         <Nav right={true} onSelect={this.handleSelect}>
           <NavDropdown title="Email" id="basic-nav-dropdown">
             <MenuItem eventKey="2">By Email</MenuItem>
-            <MenuItem eventKey="3">By Train</MenuItem>
             <MenuItem eventKey="4">By Date</MenuItem>
             <MenuItem divider />
             <MenuItem eventKey="5">Email All</MenuItem>
