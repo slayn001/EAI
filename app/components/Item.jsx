@@ -9,6 +9,7 @@ getInitialState: function(){
   return {
     modalIsOpen: false
     ,dateModalIsOpen: false
+    ,dateColor: 'red'
     ,cellColor: this.props.item.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
@@ -57,17 +58,21 @@ getInitialState: function(){
 ,updateDate: function(e){
   this.props.item.tgtConvDate = this.state.tgtConvDate;
   action.setTgtConvDate(this.props.item);
-
+  this.setState({
+    dateColor : 'blue'
+  });
   this.closeModal();
 }
 ,render: function(){
 
-    var trainClasses = classNames('one', 'columns', this.state.trainColor);
+    
     var cellClasses = classNames('one', 'columns', this.state.cellColor);
+    var dateClasses = classNames('one', 'columns', this.state.dateColor);
+
     return (
 
       <div className='item row'>
-        <div className={trainClasses} onClick={this.openDateModal}>
+        <div className={dateClasses} onClick={this.openDateModal}>
           {this.props.item.tgtConvDate}
         </div>
         <div className={cellClasses}>
@@ -97,7 +102,6 @@ getInitialState: function(){
         <div className='one columns'>
           <button className='btn btn-primary' disabled={this.state.guideButton} onClick={this.setGuideSignOff}>{this.state.guideButton?'Done':'Sign'}</button>
         </div>
-
 
         <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.modalIsOpen} onRequestClose={this.handleModalCloseRequest}>
         <div className='modal-content'>
