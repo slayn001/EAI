@@ -9,8 +9,7 @@ getInitialState: function(){
   return {
     modalIsOpen: false
     ,dateModalIsOpen: false
-    ,trainColor: this.props.trainColor
-    ,cellColor: this.props.cellOwner ? 'blue' : ''
+    ,cellColor: this.props.item.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
     ,testerEmail: this.props.item.testerEmail

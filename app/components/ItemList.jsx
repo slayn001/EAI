@@ -12,27 +12,6 @@ module.exports = React.createClass({
       checked:false
     }
   }
-  ,convertFromStringToDate:function(date){
-    var da = date.split('/');
-    return new Date(da[2], da[0]-1, da[1])
-  }
-  ,getDayDiff: function(a,b){
-    var utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
-    var utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
-    return Math.floor((utc2-utc1)/_MS_PER_DAY);
-  }
-  ,returnColor: function(item){
-
-    var dayDiff = this.getDayDiff(new Date(), this.convertFromStringToDate(item.tgtConvDate));
-
-    if (  dayDiff  < 0 )
-      return 'red';
-    else if (  dayDiff <= 14 )
-      return 'amber';
-    else
-      return 'green';
-
-  }
   ,render: function(){
     return (
 
@@ -44,7 +23,7 @@ module.exports = React.createClass({
           {this.props.items.map(function(item, i){
 
             return(
-            <Item  eso={item.envSignOff} gso={item.guideSignOff} cellOwner={item.cellOwner} trainColor={this.returnColor(item)} item={item} key={item._id} itemIndex={i}/>
+            <Item  eso={item.envSignOff} gso={item.guideSignOff} item={item} key={item._id} itemIndex={i}/>
             )
           }, this).sort(function(a, b){
             return a.props.item.train-b.props.item.train;
