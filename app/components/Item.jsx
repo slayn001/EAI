@@ -3,18 +3,41 @@ var action = require('./../actions/ItemActionCreator.jsx');
 var Modal = require('react-modal/lib/index');
 var classNames = require('classnames');
 
+var _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
 module.exports = React.createClass({
 
 getInitialState: function(){
   return {
     modalIsOpen: false
     ,dateModalIsOpen: false
-    ,dateColor: 'red'
+    ,dateColor: this.returnColor(this.props.item)
     ,cellColor: this.props.item.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
     ,guideButton: this.props.gso || false
     ,testerEmail: this.props.item.testerEmail
+    ,tgtConvDate: this.props.item.tgtConvDate
   }
+}
+,convertFromStringToDate:function(date){
+  var da = date.split('/');
+  return new Date(da[2], da[0]-1, da[1]);
+}
+,getDayDiff: function(a,b){
+  var utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+  var utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+  return Math.floor((utc2-utc1)/_MS_PER_DAY);
+}
+,returnColor: function(item){
+
+  var dayDiff = this.getDayDiff(new Date(), this.convertFromStringToDate(item.tgtConvDate));
+ 
+  if (  dayDiff  < 0 )
+    return 'red';
+  else if (  dayDiff <= 14 )
+    return 'amber';
+  else
+    return 'green';
 }
 ,openModal: function(){
   this.setState({modalIsOpen: true});
@@ -58,10 +81,12 @@ getInitialState: function(){
 ,updateDate: function(e){
   this.props.item.tgtConvDate = this.state.tgtConvDate;
   action.setTgtConvDate(this.props.item);
+
   this.setState({
-    dateColor : 'blue'
+    dateColor : this.returnColor(this.props.item)
   });
-  this.closeModal();
+  
+  this.closeDateModal();
 }
 ,render: function(){
 

@@ -26,7 +26,7 @@ module.exports = React.createClass({
             <Item  eso={item.envSignOff} gso={item.guideSignOff} item={item} key={item._id} itemIndex={i}/>
             )
           }, this).sort(function(a, b){
-            return a.props.item.train-b.props.item.train;
+            return new Date(a.props.item.tgtConvDate) - new Date(b.props.item.tgtConvDate); 
           })}
         </div>
       </div>
