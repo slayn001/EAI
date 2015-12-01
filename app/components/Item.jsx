@@ -100,7 +100,7 @@ getInitialState: function(){
         <div className={dateClasses} onClick={this.openDateModal}>
           {this.props.item.tgtConvDate}
         </div>
-        <div className={cellClasses}>
+        <div className='one columns'>
           <span>{this.props.item.eai}</span>
         </div>
         <div className='two columns' title={this.props.item.managerEmail}>
@@ -115,7 +115,7 @@ getInitialState: function(){
         <div className='two columns' style={{marginLeft:6+'%'}}>
           {this.props.item.server}
         </div>        
-        <div className='one columns'>
+        <div className={cellClasses}>
           {this.props.item.cell}
         </div>
         <div className='one columns'>
