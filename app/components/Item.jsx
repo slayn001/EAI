@@ -85,7 +85,7 @@ getInitialState: function(){
   this.setState({
     dateColor : this.returnColor(this.props.item)
   });
-  
+
   this.closeDateModal();
 }
 ,render: function(){
@@ -103,10 +103,10 @@ getInitialState: function(){
         <div className={cellClasses}>
           <span>{this.props.item.eai}</span>
         </div>
-        <div className='one columns' title={this.props.item.managerEmail}>
+        <div className='two columns' title={this.props.item.managerEmail}>
           {this.props.item.projectManager}
         </div>
-        <div className='one columns' title={this.props.item.appName} style={{marginLeft:6+'%'}}>
+        <div className='one columns' title={this.props.item.appName}>
           {this.props.item.appName.substring(0,5)}
         </div>
         <div className='one columns' style={{marginLeft:2+'%'}} onClick={this.openModal}>
