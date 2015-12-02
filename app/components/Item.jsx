@@ -1,6 +1,6 @@
 var React = require('react');
 var action = require('./../actions/ItemActionCreator.jsx');
-var Modal = require('react-modal/lib/index');
+var Modal = require('react-bootstrap/lib/Modal');
 var classNames = require('classnames');
 var ItemDatePicker = require('./ItemDatePicker.jsx');
 
@@ -11,7 +11,7 @@ module.exports = React.createClass({
 getInitialState: function(){
   return {
     modalIsOpen: false
-    ,dateModalIsOpen: false
+    ,showModal: false
     ,dateColor: this.returnColor(this.props.item)
     ,cellColor: this.props.item.cellOwner ? 'blue' : ''
     ,envButton: this.props.eso || false
@@ -52,11 +52,11 @@ getInitialState: function(){
 ,handleModalCloseRequest: function(){
   this.closeModal();
 }
-,openDateModal: function(){
-  this.setState({dateModalIsOpen: true});
+,close: function(){
+    this.setState({ showModal: false });
 }
-,closeDateModal: function(){
-  this.setState({dateModalIsOpen: false});
+,open: function() {
+    this.setState({ showModal: true });
 }
 ,handleDateModalCloseRequest: function(){
   this.closeDateModal();
@@ -101,7 +101,7 @@ getInitialState: function(){
     return (
 
       <div className='item row'>
-        <div className={dateClasses} onClick={this.openDateModal}>
+        <div className={dateClasses} onClick={this.open}>
           {this.props.item.tgtConvDate}
         </div>
         <div className='one columns'>
@@ -147,20 +147,36 @@ getInitialState: function(){
         </div>
       </Modal>
 
-      <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.dateModalIsOpen} onRequestClose={this.handleDateModalCloseRequest}>
-        <div className='modal-content'>
-          <div className='modal-header'>
-            <h4> Target Conversion Date </h4>
-          </div>
-          <div className='modal-body'>
-            <ItemDatePicker date={this.state.tgtConvDate} callbackParent={this.onChildChanged}/>
-          </div>
-          <div className='modal-footer'>
-            <button type="button" className="btn btn-default" onClick={this.handleDateModalCloseRequest}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={this.updateDate}>Update</button>
-          </div>
-        </div>
-      </Modal>
+      <Modal show={this.state.showModal} onHide={this.close}>
+          <Modal.Header>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <h4>Text in a modal</h4>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+
+            <h4>Popover in a modal</h4>
+           
+
+            <h4>Tooltips in a modal</h4>
+            
+            <hr />
+
+            <h4>Overflowing text to show scroll behavior</h4>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          </Modal.Body>
+          <Modal.Footer>
+           
+          </Modal.Footer>
+        </Modal>
 
       </div>
     )
