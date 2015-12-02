@@ -152,7 +152,7 @@ getInitialState: function(){
             <h4> Target Conversion Date </h4>
           </div>
           <div className='modal-body'>
-            <ItemDatePicker />
+            <ItemDatePicker date={this.state.tgtConvDate}/>
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleDateModalCloseRequest}>Close</button>

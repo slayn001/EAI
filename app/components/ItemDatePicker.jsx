@@ -5,23 +5,24 @@ var moment = require('moment');
 //require('react-datepicker/dist/react-datepicker.css');
 
 module.exports = React.createClass({
-  displayName: 'Example',
+  
 
   getInitialState: function() {
+    
     return {
-      startDate: moment()
+      date: moment(this.props.date)
     };
   },
 
   handleChange: function(date) {
     this.setState({
-      startDate: date
+      date: date
     });
   },
 
   render: function() {
     return <DatePicker
-        selected={this.state.startDate}
+        selected={this.state.date}
         onChange={this.handleChange} />;
   }
 });
