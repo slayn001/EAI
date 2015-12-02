@@ -4,8 +4,6 @@ var Modal = require('react-modal/lib/index');
 var classNames = require('classnames');
 var ItemDatePicker = require('./ItemDatePicker.jsx');
 
-//require('react-datepicker/dist/react-datepicker.css');
-
 var _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
 module.exports = React.createClass({
@@ -41,6 +39,9 @@ getInitialState: function(){
     return 'amber';
   else
     return 'green';
+}
+,onChildChanged: function(date){
+  this.setState({tgtConvDate:date});
 }
 ,openModal: function(){
   this.setState({modalIsOpen: true});
@@ -137,7 +138,7 @@ getInitialState: function(){
             <h4> Tester Email </h4>
           </div>
           <div className='modal-body'>
-            <input type='text' placeholder={this.props.item.testerEmail} id='input' onChange={this.handleChange}/>
+            <input type='text' placeholder={this.props.item.testerEmail} id='input' onChange={this.updateDate}/>
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
@@ -152,7 +153,7 @@ getInitialState: function(){
             <h4> Target Conversion Date </h4>
           </div>
           <div className='modal-body'>
-            <ItemDatePicker date={this.state.tgtConvDate}/>
+            <ItemDatePicker date={this.state.tgtConvDate} callbackParent={this.onChildChanged}/>
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleDateModalCloseRequest}>Close</button>
