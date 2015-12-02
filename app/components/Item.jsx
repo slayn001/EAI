@@ -2,6 +2,9 @@ var React = require('react');
 var action = require('./../actions/ItemActionCreator.jsx');
 var Modal = require('react-modal/lib/index');
 var classNames = require('classnames');
+var ItemDatePicker = require('./ItemDatePicker.jsx');
+
+//require('react-datepicker/dist/react-datepicker.css');
 
 var _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
@@ -149,7 +152,7 @@ getInitialState: function(){
             <h4> Target Conversion Date </h4>
           </div>
           <div className='modal-body'>
-            <input type='text' placeholder={this.props.item.tgtConvDate} id='input' onChange={this.handleDateChange}/>
+            <ItemDatePicker />
           </div>
           <div className='modal-footer'>
             <button type="button" className="btn btn-default" onClick={this.handleDateModalCloseRequest}>Close</button>

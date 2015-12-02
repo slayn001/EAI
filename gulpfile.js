@@ -34,10 +34,13 @@ gulp.task('copy', function(){
   .pipe(gulp.dest('./.tmp'));
 
   gulp.src(['bower_components/skeleton/css/*.css'])
-  .pipe(gulp.dest('./.tmp'))
+  .pipe(gulp.dest('./.tmp'));
 
   gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css'])
-  .pipe(gulp.dest('./.tmp'))
+  .pipe(gulp.dest('./.tmp'));
+
+  gulp.src(['node_modules/react-datepicker/dist/react-datepicker.css'])
+  .pipe(gulp.dest('./.tmp'));
 
   gulp.src(['server/images/*.png'])
   .pipe(gulp.dest('./.tmp'));
