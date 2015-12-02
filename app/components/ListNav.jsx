@@ -7,7 +7,7 @@ var Navbar = require( 'react-bootstrap/lib/Navbar' );
 var NavDropdown = require('react-bootstrap/lib/NavDropdown' );
 var DropdownButton = require( 'react-bootstrap/lib/DropdownButton' );
 var MenuItem = require( 'react-bootstrap/lib/MenuItem' );
-var Modal = require('react-modal/lib/index');
+var Modal = require('react-bootstrap/lib/Modal');
 var action = require('./../actions/ItemActionCreator.jsx');
 
 module.exports = React.createClass({
@@ -102,31 +102,15 @@ module.exports = React.createClass({
         </Nav>
       </Navbar>
 
-      <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.state.modalIsOpen} onRequestClose={this.handleModalCloseRequest}>
-        <div className='modal-content'>
-          <div className='modal-header'>
-            <h4> {this.state.header} </h4>
-          </div>
-          <div className='modal-body'>
-            <div className='row'>
-              <div className='three columns'>
-                <NavDropdown title="Email" id="basic-nav-dropdown" onSelect={this.handleSelect}>
-                  {lst.map(function(e, i){
-                    return(
-                      <MenuItem eventKey="6"> {e} </MenuItem>
-                    )
-                  })}
-                </NavDropdown>
-              </div>
-              <div className='three columns'>{this.state.prompt}</div>
-            </div>
-          </div>
-          <div className='modal-footer'>
-            <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
-            <button type="button" className="btn btn-primary" onClick={this.sendEmail}>Email</button>
-          </div>
-        </div>
+      <Modal>
+        <Modal.Header>
+        </Modal.Header>
+        <Modal.Body>
+        </Modal.Body>
+        <Modal.Footer>
+        </Modal.Footer>
       </Modal>
+      
       </div>
     )
   }
