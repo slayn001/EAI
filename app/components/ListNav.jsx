@@ -13,17 +13,14 @@ var action = require('./../actions/ItemActionCreator.jsx');
 module.exports = React.createClass({
   getInitialState: function(){
      return {
-      modalIsOpen: false
+      showModal: false
     }
   }
   ,openModal: function(){
-    this.setState({modalIsOpen: true});
+    this.setState({showModal: true});
   }
   ,closeModal: function(){
-    this.setState({modalIsOpen: false});
-  }
-  ,handleModalCloseRequest: function(){
-    this.closeModal();
+    this.setState({showModal: false});
   }
   ,emailAll: function(e){
     action.email(this.props.items);
@@ -56,7 +53,7 @@ module.exports = React.createClass({
         if ( lst.indexOf(e.testerEmail) < 0)
           lst.push(e.testerEmail);
       });
-      this.setState({header: 'Email by Email Address', prompt: 'email@metlife.com', code:'testerEmail', choices:lst})
+      this.setState({header: 'Email Address', prompt: 'email@metlife.com', code:'testerEmail', choices:lst})
       this.openModal();
     }
     else if (selectedKey === '4'){
@@ -65,7 +62,7 @@ module.exports = React.createClass({
         if ( lst.indexOf(e.tgtConvDate) < 0)
           lst.push(e.tgtConvDate);
       });
-      this.setState({header: 'Email by Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate', choices:lst})
+      this.setState({header: 'Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate', choices:lst})
       
       this.openModal();
     }
@@ -102,14 +99,14 @@ module.exports = React.createClass({
         </Nav>
       </Navbar>
 
-      <Modal show={this.state.modalIsOpen} onHide={this.handleModalCloseRequest}>
+      <Modal show={this.state.showModal} onHide={this.closeModal}>
         <Modal.Header>
-        {this.state.header}
+          Email by {this.state.header}
         </Modal.Header>
         <Modal.Body>
           <div className='row'>
-            <div className='three columns'>
-              <NavDropdown title='Email' id='basic-nav-dropdown' onSelect={this.handleSelect}>
+            <div className='four columns'>
+              <NavDropdown title="Selection" id='basic-nav-dropdown' onSelect={this.handleSelect}>
                 {lst.map(function(e, i){
                   return (
                     <MenuItem eventKey='6'> {e} </MenuItem>
@@ -123,7 +120,7 @@ module.exports = React.createClass({
           </div>  
         </Modal.Body>
         <Modal.Footer>
-          <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
+          <button type="button" className="btn btn-default" onClick={this.closeModal}>Close</button>
           <button type="button" className="btn btn-primary" onClick={this.sendEmail}>Email</button>
         </Modal.Footer>
       </Modal>
