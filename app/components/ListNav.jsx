@@ -105,7 +105,10 @@ module.exports = React.createClass({
         </Modal.Header>
         <Modal.Body>
           <div className='row'>
-            <div className='four columns'>
+            <div className='one column'>
+              &nbsp;
+            </div>
+            <div className='three columns'>
               <NavDropdown title="Selection" id='basic-nav-dropdown' onSelect={this.handleSelect}>
                 {lst.map(function(e, i){
                   return (
