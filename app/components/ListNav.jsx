@@ -102,7 +102,7 @@ module.exports = React.createClass({
         </Nav>
       </Navbar>
 
-      <Modal>
+      <Modal show={this.state.modalIsOpen} onHide={this.handleModalCloseRequest}>
         <Modal.Header>
         {this.state.header}
         </Modal.Header>
@@ -117,7 +117,7 @@ module.exports = React.createClass({
                 })}
               </NavDropdown>
             </div>
-            <div className='three columns'>
+            <div className='four columns'>
               {this.state.prompt}
             </div>
           </div>  
