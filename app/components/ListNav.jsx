@@ -104,10 +104,27 @@ module.exports = React.createClass({
 
       <Modal>
         <Modal.Header>
+        {this.state.header}
         </Modal.Header>
         <Modal.Body>
+          <div className='row'>
+            <div className='three columns'>
+              <NavDropdown title='Email' id='basic-nav-dropdown' onSelect={this.handleSelect}>
+                {lst.map(function(e, i){
+                  return (
+                    <MenuItem eventKey='6'> {e} </MenuItem>
+                  )
+                })}
+              </NavDropdown>
+            </div>
+            <div className='three columns'>
+              {this.state.prompt}
+            </div>
+          </div>  
         </Modal.Body>
         <Modal.Footer>
+          <button type="button" className="btn btn-default" onClick={this.handleModalCloseRequest}>Close</button>
+          <button type="button" className="btn btn-primary" onClick={this.sendEmail}>Email</button>
         </Modal.Footer>
       </Modal>
       
