@@ -3,6 +3,9 @@ var action = require('./../actions/ItemActionCreator.jsx');
 var Modal = require('react-bootstrap/lib/Modal');
 var classNames = require('classnames');
 var ItemDatePicker = require('./ItemDatePicker.jsx');
+var DropdownButton = require( 'react-bootstrap/lib/DropdownButton' );
+var SplitButton = require('react-bootstrap/lib/SplitButton');
+var MenuItem = require( 'react-bootstrap/lib/MenuItem' );
 
 var _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
@@ -64,6 +67,9 @@ module.exports = React.createClass({
       this.setState({train: this.state.train-1});
       action.setTrainNum(this.props.item);
   }
+  ,setTrainNum: function(e){
+    this.setState({train: e})
+  }
   ,setEnvSignOff: function(e){
     this.setState({ envButton: !this.state.envButton});
     action.setEnvSignOff(this.props.item);
@@ -107,10 +113,14 @@ module.exports = React.createClass({
           <div className='one columns'>
             <span>{this.props.item.eai}</span>
           </div>
-          <div className='one columns' style={{marginLeft:0+'%'}} onClick={this.increaseTrain}>
-            {this.state.train}
+          <div className='one columns' style={{marginLeft:2+'%'}} >
+            <DropdownButton title={'0'} id="dropdown-basic" >
+              <MenuItem eventKey="1">1</MenuItem>
+              <MenuItem eventKey="2">2</MenuItem>
+              <MenuItem eventKey="3">3</MenuItem>
+            </DropdownButton>
           </div>
-          <div className='two columns' title={this.props.item.managerEmail} style={{marginLeft: 2+'%'}}>
+          <div className='two columns' title={this.props.item.managerEmail} style={{marginLeft: 0+'%'}}>
             {this.props.item.projectManager}
           </div>
           <div className='one columns' title={this.props.item.appName}>
