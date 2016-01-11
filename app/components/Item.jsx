@@ -18,6 +18,7 @@ module.exports = React.createClass({
       ,guideButton: this.props.gso || false
       ,testerEmail: this.props.item.testerEmail
       ,tgtConvDate: this.props.item.tgtConvDate
+      ,train:  this.props.item.train || 0
     }
   }
   ,convertFromStringToDate:function(date){
@@ -55,12 +56,20 @@ module.exports = React.createClass({
   ,openDateModal: function() {
       this.setState({ showDateModal: true });
   }
+  ,increaseTrain: function(){
+      this.setState({train: this.state.train+1});
+      action.setTrainNum(this.props.item);
+  }
+  ,decreaseTrain: function(){
+      this.setState({train: this.state.train-1});
+      action.setTrainNum(this.props.item);
+  }
   ,setEnvSignOff: function(e){
-    this.setState({ envButton: !this.state.envButton})
+    this.setState({ envButton: !this.state.envButton});
     action.setEnvSignOff(this.props.item);
   }
   ,setGuideSignOff: function(e){
-    this.setState({ guideButton: !this.state.guideButton })
+    this.setState({ guideButton: !this.state.guideButton });
     action.setGuideSignOff(this.props.item);
   }
   ,handleEmailChange: function(e){
@@ -98,8 +107,8 @@ module.exports = React.createClass({
           <div className='one columns'>
             <span>{this.props.item.eai}</span>
           </div>
-          <div className='one columns' style={{marginLeft:0+'%'}}>
-            0
+          <div className='one columns' style={{marginLeft:0+'%'}} onClick={this.increaseTrain}>
+            {this.state.train}
           </div>
           <div className='two columns' title={this.props.item.managerEmail} style={{marginLeft: 2+'%'}}>
             {this.props.item.projectManager}
