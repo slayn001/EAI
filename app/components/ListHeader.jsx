@@ -6,6 +6,7 @@ module.exports = React.createClass({
       <div className='heading row'>
         <div className='one columns'> <b>Target Date</b></div>
         <div className='one columns'> <b>EAI</b></div>
+        <div className='one columns'> <b>Train</b></div>
         <div className='two columns'> <b>Project Manager</b></div>
         <div className='one columns'> <b>Application</b></div>
         <div className='one columns' style={{marginLeft:6+'%'}}> <b>Tester Email</b></div>
