@@ -98,7 +98,10 @@ module.exports = React.createClass({
           <div className='one columns'>
             <span>{this.props.item.eai}</span>
           </div>
-          <div className='two columns' title={this.props.item.managerEmail}>
+          <div className='one columns' style={{marginLeft:0+'%'}}>
+            0
+          </div>
+          <div className='two columns' title={this.props.item.managerEmail} style={{marginLeft: 2+'%'}}>
             {this.props.item.projectManager}
           </div>
           <div className='one columns' title={this.props.item.appName}>
@@ -113,10 +116,7 @@ module.exports = React.createClass({
           <div className={cellClasses}>
             {this.props.item.cell}
           </div>
-          <div className='one columns'>
-            &nbsp;
-          </div>
-          <div className='one columns'>
+          <div className='one columns' style={{marginLeft:8+'%'}}>
             <button className='btn btn-primary' disabled={this.state.envButton} onClick={this.setEnvSignOff}>{this.state.envButton?'Done':'Sign'}</button>
           </div>
           <div className='one columns'>
