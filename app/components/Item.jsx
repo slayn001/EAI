@@ -57,16 +57,18 @@ module.exports = React.createClass({
       this.setState({ showDateModal: true });
   }
   ,increaseTrain: function(e){
-      this.setState({train: this.state.train+1});
+      e.preventDefault();
+      var newTrain = this.state.train+1;
+      this.setState({train: newTrain});
+      this.props.item.train = newTrain;
       action.setTrainNum(this.props.item);
   }
   ,decreaseTrain: function(e){
       e.preventDefault();
-      this.setState({train: this.state.train-1});
+      var newTrain = this.state.train-1;
+      this.setState({train: newTrain});
+      this.props.item.train = newTrain;
       action.setTrainNum(this.props.item);
-  }
-  ,setTrainNum: function(e){
-    this.setState({train: e})
   }
   ,setEnvSignOff: function(e){
     this.setState({ envButton: !this.state.envButton});

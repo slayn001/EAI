@@ -41,6 +41,13 @@ module.exports = {
       ,type:'item:setTgtConvDate'
     })
   }
+  ,setTrainNum: function(item){
+    console.log(item);
+    dispatcher.dispatch({
+      payload: item
+      ,type:'item:setTrainNum'
+    })
+  }
   ,email: function(data){
     dispatcher.dispatch({
       payload:data

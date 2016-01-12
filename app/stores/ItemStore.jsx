@@ -61,6 +61,11 @@ function ItemStore(){
     helper.patch('/api/items/' + item._id, item);
   }
 
+  function setTrainNum(item){
+    triggerListeners();
+    helper.patch('/api/items/' +item._id, item);
+  }
+  
   function setTgtConvDate(item){
     triggerListeners();
     helper.patch('/api/items/' + item._id, item);
@@ -97,6 +102,9 @@ function ItemStore(){
           break;
         case 'setTgtConvDate' :
           setTesterEmail(event.payload);
+          break;
+        case 'setTrainNum' :
+          setTrainNum(event.payload);
           break;
         case 'email' :
           email(event.payload);
