@@ -15,9 +15,9 @@ module.exports = {
     // the same transporter object for all e-mails
 
     var mailObjectList = [];
-    
+
     lst.forEach(function(e){
-      
+
       var mailObj = {};
 
       mailObj.from = 'WAS Dev Migration  <wasdevmigration@metlife.com>';
@@ -34,7 +34,7 @@ module.exports = {
               return console.log(error);
           }
           console.log('Message sent: ' + info.response);
-      }); 
+      });
     })
   }
 }

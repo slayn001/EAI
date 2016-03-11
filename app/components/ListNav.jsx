@@ -16,6 +16,20 @@ module.exports = React.createClass({
       showModal: false
     }
   }
+  ,chunkList: function(lst,size){
+    var tmp = []
+
+    var j = 0;
+
+    for ( var i = 0; i < lst.length; i++){
+      if ( j== size || j == 0){
+        tmp.push(lst.slice(i,(i+size)));
+        j=0;
+      }j++;
+    }
+
+    return tmp;
+  }
   ,openModal: function(){
     this.setState({showModal: true});
   }
@@ -23,7 +37,12 @@ module.exports = React.createClass({
     this.setState({showModal: false});
   }
   ,emailAll: function(e){
-    action.email(this.props.items);
+
+    var arrSquared = this.chunkList(this.props.items,50);
+
+    arrSquared.forEach(function(e){
+      action.email(e);
+    })
   }
   ,handleChange: function(e){
     e.preventDefault();
@@ -39,10 +58,17 @@ module.exports = React.createClass({
       if ( e[index].toString() === input)
         lst.push(e);
     })
-    action.email(lst);
+
+    var arrSquared = this.chunkList(lst,50);
+
+    arrSquared.forEach(function(e){
+      action.email(e);
+    })
+    
     this.closeModal();
 
   }
+
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
