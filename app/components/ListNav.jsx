@@ -46,7 +46,7 @@ module.exports = React.createClass({
   ,handleSelect: function(event, selectedKey){
     event.preventDefault();
     console.log('you selected ' + selectedKey);
-    
+
     if (selectedKey === '2'){
       var lst = [];
       this.props.items.forEach(function(e){
@@ -56,6 +56,15 @@ module.exports = React.createClass({
       this.setState({header: 'Email Address', prompt: 'email@metlife.com', code:'testerEmail', choices:lst})
       this.openModal();
     }
+    else if (selectedKey === '3'){
+      var lst = [];
+      this.props.items.forEach(function(e){
+        if ( lst.indexOf(e.train) < 0)
+        lst.push(e.train);
+      });
+      this.setState({header: 'Train Number', prompt: 'Train', code:'train', choices:lst})
+      this.openModal();
+    }
     else if (selectedKey === '4'){
       var lst = [];
       this.props.items.forEach(function(e){
@@ -63,7 +72,7 @@ module.exports = React.createClass({
           lst.push(e.tgtConvDate);
       });
       this.setState({header: 'Target Conversion Date', prompt: 'Target Conversion Date', code:'tgtConvDate', choices:lst})
-      
+
       this.openModal();
     }
     else if (selectedKey === '5'){
@@ -73,7 +82,7 @@ module.exports = React.createClass({
       this.setState({prompt:event.target.innerText, mailInput:event.target.innerText});
     }
   }
-  
+
   ,render:function(){
 
     var lst = this.state.choices || [];
@@ -93,6 +102,7 @@ module.exports = React.createClass({
           <NavDropdown title="Email" id="basic-nav-dropdown">
             <MenuItem eventKey="2">By Email</MenuItem>
             <MenuItem eventKey="4">By Date</MenuItem>
+            <MenuItem eventKey='3'>By Train</MenuItem>
             <MenuItem divider />
             <MenuItem eventKey="5">Email All</MenuItem>
           </NavDropdown>
@@ -120,14 +130,14 @@ module.exports = React.createClass({
             <div className='four columns'>
               {this.state.prompt}
             </div>
-          </div>  
+          </div>
         </Modal.Body>
         <Modal.Footer>
           <button type="button" className="btn btn-default" onClick={this.closeModal}>Close</button>
           <button type="button" className="btn btn-primary" onClick={this.sendEmail}>Email</button>
         </Modal.Footer>
       </Modal>
-      
+
       </div>
     )
   }
