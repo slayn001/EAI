@@ -11,11 +11,11 @@ gulp.task('live-server', function(){
 });
 
 gulp.task('serve', ['bundle', 'live-server'], function(){
-  browserSync.init(null, {
-    proxy:"http://localhost:7777"
-    ,browser: "chrome"
-    ,port: 9001
-  })
+  // browserSync.init(null, {
+  //   proxy:"http://localhost:7777"
+  //   ,browser: "chrome"
+  //   ,port: 9001
+  // })
 });
 
 gulp.task('bundle',['copy'], function(){
