@@ -1,13 +1,19 @@
 module.exports = {
-	
+
 	centerOfExcellence : "https://team.amer.mymetlife.com/Teams/developers/Lists/WAS 85 Discussion/Flat.aspx?RootFolder=%2FTeams%2Fdevelopers%2FLists%2FWAS%2085%20Discussion%2FWhere%20can%20i%20find%20the%20Governance%20Model&FolderCTID=0x01200200D0961C7E2728A84BACA217F63BA507E5"
 	,communityOfPractice : "https://team.amer.mymetlife.com/Teams/developers/SiteAssets/WAS Dev Self Service.aspx"
-	,template : function(e){		
-		
-		return "<div>" 
+	,template : function(e){
+
+		return "<div>"
 		+ "<b>" + e.projectManager +"</b>"
-		+ "<br/>"   
-		+ "<div><br/>Your WAS Development Environment (EAI code: "+e.eai+") is scheduled for conversion beginning "+e.convStartDate+". Your team is required to take following actions:</div>"
+		+ "<br/>"
+		+ "<div><br/>Your WAS Development Environment"
+		+ "<ul><li>"
+		+ "EAI code: " + e.eai
+		+ "</li><li>"
+		+ "Application Name: " + e.appName 
+		+ "</li></ul>"
+		+ "is scheduled for conversion beginning "+e.convStartDate+". Your team is required to take following actions:</div>"
 		+ "<ul>"
 		+ "<li>"
 		+ "Access Management: We recommend all software engineering teams confirm that they have appropriate access to their development environment. Contact IDAdmin to request MetNet group be added to the development box. The group must contain all developers who need access to the environment using personal MetNet ID."
@@ -26,10 +32,10 @@ module.exports = {
 		+ "<li>BMC Middleware Automation 8.1: Fundamentals - Module 3 (MLG00980)</li>"
 		+ "</ul>"
 		+ "</li>"
-		+ "<li>" 
+		+ "<li>"
 		+ "Global Tracker Site: Go to the <a href='http://us1700368:9001/'>conversion tracker site</a>, locate your application instance, and click on Env. Signoff and Guideline Signoff button."
 		+ "<ul><li style='color:Red'>"
-		+ " Please note!!!  The link to the conversion tracker site is NOT " 
+		+ " Please note!!!  The link to the conversion tracker site is NOT "
 		+ "compatible with IE.  Please open in the Chrome browser for the appropriate user experience"
 		+ "</li></ul>"
 		+ "</li>"
