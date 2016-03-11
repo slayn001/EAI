@@ -18,6 +18,7 @@ var ItemSchema = {
   ,envSignOffDate: String
   ,guideSignOffDate: String
   ,cellOwner: Boolean
+  ,convStartDate: String
 };
 
 var Item = mongoose.model('Item',ItemSchema, "Items");
