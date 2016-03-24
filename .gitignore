@@ -2,3 +2,7 @@ node_modules
 bower_components
 .tmp/
 npm-debug.log
+server/chunk.js
+server/emailSeed.js
+server/emailTest.js
+server/dateChange.js
